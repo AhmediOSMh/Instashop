@@ -25,6 +25,7 @@
 		3B74B759216EA70D004FD12B /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B756216EA70D004FD12B /* Label.swift */; };
 		3B74B75A216EA70D004FD12B /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B757216EA70D004FD12B /* TextField.swift */; };
 		3B74B75C216EA798004FD12B /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B75B216EA797004FD12B /* LanguageManager.swift */; };
+		3DFBD236505E18CD6293B7D8 /* Pods_InstaShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C9CE6C4A84D17040A77FE6 /* Pods_InstaShop.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,9 @@
 		3B74B756216EA70D004FD12B /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		3B74B757216EA70D004FD12B /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		3B74B75B216EA797004FD12B /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		78DFA8D25F36A48F1286D3C9 /* Pods-InstaShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop.debug.xcconfig"; sourceTree = "<group>"; };
+		AD8280C117EEE7BABF2F32BA /* Pods-InstaShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop.release.xcconfig"; sourceTree = "<group>"; };
+		F7C9CE6C4A84D17040A77FE6 /* Pods_InstaShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +62,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DFBD236505E18CD6293B7D8 /* Pods_InstaShop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FEAFC8981649959EFC9677B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78DFA8D25F36A48F1286D3C9 /* Pods-InstaShop.debug.xcconfig */,
+				AD8280C117EEE7BABF2F32BA /* Pods-InstaShop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3B58D3042168DCE7000041EE = {
 			isa = PBXGroup;
 			children = (
 				3B58D30F2168DCE7000041EE /* InstaShop */,
 				3B58D30E2168DCE7000041EE /* Products */,
+				2FEAFC8981649959EFC9677B /* Pods */,
+				72D81F363F081373B88A1E9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +164,14 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
+		72D81F363F081373B88A1E9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7C9CE6C4A84D17040A77FE6 /* Pods_InstaShop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B58D3222168DCE8000041EE /* Build configuration list for PBXNativeTarget "InstaShop" */;
 			buildPhases = (
+				F8E2FA0A5A1384B8DC5F48DA /* [CP] Check Pods Manifest.lock */,
 				3B58D3092168DCE7000041EE /* Sources */,
 				3B58D30A2168DCE7000041EE /* Frameworks */,
 				3B58D30B2168DCE7000041EE /* Resources */,
+				F1D21C90512F4FB513B35233 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,6 +247,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F1D21C90512F4FB513B35233 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
+				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8E2FA0A5A1384B8DC5F48DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaShop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B58D3092168DCE7000041EE /* Sources */ = {
@@ -383,29 +452,35 @@
 		};
 		3B58D3232168DCE8000041EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78DFA8D25F36A48F1286D3C9 /* Pods-InstaShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YM8CFU85ZD;
 				INFOPLIST_FILE = InstaShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devPlus.InstaShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3B58D3242168DCE8000041EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD8280C117EEE7BABF2F32BA /* Pods-InstaShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YM8CFU85ZD;
 				INFOPLIST_FILE = InstaShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devPlus.InstaShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
