@@ -13,6 +13,14 @@
 		3B58D3192168DCE7000041EE /* InstaShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B58D3172168DCE7000041EE /* InstaShop.xcdatamodeld */; };
 		3B58D31B2168DCE8000041EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B58D31A2168DCE8000041EE /* Assets.xcassets */; };
 		3B58D31E2168DCE8000041EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B58D31C2168DCE8000041EE /* LaunchScreen.storyboard */; };
+		3B74B745216EA1BA004FD12B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B73C216EA1B9004FD12B /* SignUpViewController.swift */; };
+		3B74B746216EA1BA004FD12B /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B74B73D216EA1B9004FD12B /* SignUpViewController.xib */; };
+		3B74B747216EA1BA004FD12B /* bein_ar_black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B74B740216EA1B9004FD12B /* bein_ar_black.ttf */; };
+		3B74B748216EA1BA004FD12B /* bein_ar_normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B74B741216EA1B9004FD12B /* bein_ar_normal.ttf */; };
+		3B74B749216EA1BA004FD12B /* calibri.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B74B742216EA1B9004FD12B /* calibri.ttf */; };
+		3B74B74A216EA1BA004FD12B /* cortoba.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B74B743216EA1B9004FD12B /* cortoba.ttf */; };
+		3B74B74B216EA1BA004FD12B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B744216EA1B9004FD12B /* Constants.swift */; };
+		3B74B752216EA346004FD12B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B74B750216EA346004FD12B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,17 @@
 		3B58D31A2168DCE8000041EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B58D31D2168DCE8000041EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B58D31F2168DCE8000041EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B74B73C216EA1B9004FD12B /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3B74B73D216EA1B9004FD12B /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		3B74B740216EA1B9004FD12B /* bein_ar_black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bein_ar_black.ttf; sourceTree = "<group>"; };
+		3B74B741216EA1B9004FD12B /* bein_ar_normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bein_ar_normal.ttf; sourceTree = "<group>"; };
+		3B74B742216EA1B9004FD12B /* calibri.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = calibri.ttf; sourceTree = "<group>"; };
+		3B74B743216EA1B9004FD12B /* cortoba.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cortoba.ttf; sourceTree = "<group>"; };
+		3B74B744216EA1B9004FD12B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../test/test/Constants.swift; sourceTree = "<group>"; };
+		3B74B74C216EA2A7004FD12B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		3B74B74D216EA2A7004FD12B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3B74B751216EA346004FD12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3B74B753216EA36F004FD12B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +75,9 @@
 		3B58D30F2168DCE7000041EE /* InstaShop */ = {
 			isa = PBXGroup;
 			children = (
+				3B74B73A216EA1B9004FD12B /* Authentication */,
+				3B74B744216EA1B9004FD12B /* Constants.swift */,
+				3B74B73E216EA1B9004FD12B /* Ressources */,
 				3B58D3102168DCE7000041EE /* AppDelegate.swift */,
 				3B58D3122168DCE7000041EE /* ViewController.swift */,
 				3B58D3142168DCE7000041EE /* Main.storyboard */,
@@ -63,8 +85,47 @@
 				3B58D31C2168DCE8000041EE /* LaunchScreen.storyboard */,
 				3B58D31F2168DCE8000041EE /* Info.plist */,
 				3B58D3172168DCE7000041EE /* InstaShop.xcdatamodeld */,
+				3B74B750216EA346004FD12B /* Localizable.strings */,
 			);
 			path = InstaShop;
+			sourceTree = "<group>";
+		};
+		3B74B73A216EA1B9004FD12B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				3B74B73B216EA1B9004FD12B /* SignUp */,
+			);
+			name = Authentication;
+			path = ../../test/test/Authentication;
+			sourceTree = "<group>";
+		};
+		3B74B73B216EA1B9004FD12B /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				3B74B73C216EA1B9004FD12B /* SignUpViewController.swift */,
+				3B74B73D216EA1B9004FD12B /* SignUpViewController.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		3B74B73E216EA1B9004FD12B /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				3B74B73F216EA1B9004FD12B /* fonts */,
+			);
+			name = Ressources;
+			path = ../../test/test/Ressources;
+			sourceTree = "<group>";
+		};
+		3B74B73F216EA1B9004FD12B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3B74B740216EA1B9004FD12B /* bein_ar_black.ttf */,
+				3B74B741216EA1B9004FD12B /* bein_ar_normal.ttf */,
+				3B74B742216EA1B9004FD12B /* calibri.ttf */,
+				3B74B743216EA1B9004FD12B /* cortoba.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +171,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 3B58D3042168DCE7000041EE;
 			productRefGroup = 3B58D30E2168DCE7000041EE /* Products */;
@@ -126,8 +188,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B74B749216EA1BA004FD12B /* calibri.ttf in Resources */,
+				3B74B74A216EA1BA004FD12B /* cortoba.ttf in Resources */,
+				3B74B748216EA1BA004FD12B /* bein_ar_normal.ttf in Resources */,
 				3B58D31E2168DCE8000041EE /* LaunchScreen.storyboard in Resources */,
+				3B74B752216EA346004FD12B /* Localizable.strings in Resources */,
+				3B74B747216EA1BA004FD12B /* bein_ar_black.ttf in Resources */,
 				3B58D31B2168DCE8000041EE /* Assets.xcassets in Resources */,
+				3B74B746216EA1BA004FD12B /* SignUpViewController.xib in Resources */,
 				3B58D3162168DCE7000041EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B74B74B216EA1BA004FD12B /* Constants.swift in Sources */,
 				3B58D3132168DCE7000041EE /* ViewController.swift in Sources */,
 				3B58D3192168DCE7000041EE /* InstaShop.xcdatamodeld in Sources */,
+				3B74B745216EA1BA004FD12B /* SignUpViewController.swift in Sources */,
 				3B58D3112168DCE7000041EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +222,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3B58D3152168DCE7000041EE /* Base */,
+				3B74B74C216EA2A7004FD12B /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -160,8 +231,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				3B58D31D2168DCE8000041EE /* Base */,
+				3B74B74D216EA2A7004FD12B /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3B74B750216EA346004FD12B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B74B751216EA346004FD12B /* Base */,
+				3B74B753216EA36F004FD12B /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -171,6 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -228,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
