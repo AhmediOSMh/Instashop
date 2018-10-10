@@ -21,6 +21,10 @@
 		3B74B74A216EA1BA004FD12B /* cortoba.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B74B743216EA1B9004FD12B /* cortoba.ttf */; };
 		3B74B74B216EA1BA004FD12B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B744216EA1B9004FD12B /* Constants.swift */; };
 		3B74B752216EA346004FD12B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B74B750216EA346004FD12B /* Localizable.strings */; };
+		3B74B758216EA70D004FD12B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B755216EA70C004FD12B /* Button.swift */; };
+		3B74B759216EA70D004FD12B /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B756216EA70D004FD12B /* Label.swift */; };
+		3B74B75A216EA70D004FD12B /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B757216EA70D004FD12B /* TextField.swift */; };
+		3B74B75C216EA798004FD12B /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B75B216EA797004FD12B /* LanguageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		3B74B74D216EA2A7004FD12B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3B74B751216EA346004FD12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3B74B753216EA36F004FD12B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3B74B755216EA70C004FD12B /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		3B74B756216EA70D004FD12B /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		3B74B757216EA70D004FD12B /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		3B74B75B216EA797004FD12B /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,7 @@
 		3B58D30F2168DCE7000041EE /* InstaShop */ = {
 			isa = PBXGroup;
 			children = (
+				3B74B754216EA6D8004FD12B /* Component */,
 				3B74B73A216EA1B9004FD12B /* Authentication */,
 				3B74B744216EA1B9004FD12B /* Constants.swift */,
 				3B74B73E216EA1B9004FD12B /* Ressources */,
@@ -126,6 +135,17 @@
 				3B74B743216EA1B9004FD12B /* cortoba.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		3B74B754216EA6D8004FD12B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				3B74B75B216EA797004FD12B /* LanguageManager.swift */,
+				3B74B755216EA70C004FD12B /* Button.swift */,
+				3B74B756216EA70D004FD12B /* Label.swift */,
+				3B74B757216EA70D004FD12B /* TextField.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,9 +228,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B74B74B216EA1BA004FD12B /* Constants.swift in Sources */,
+				3B74B758216EA70D004FD12B /* Button.swift in Sources */,
 				3B58D3132168DCE7000041EE /* ViewController.swift in Sources */,
+				3B74B75A216EA70D004FD12B /* TextField.swift in Sources */,
 				3B58D3192168DCE7000041EE /* InstaShop.xcdatamodeld in Sources */,
 				3B74B745216EA1BA004FD12B /* SignUpViewController.swift in Sources */,
+				3B74B75C216EA798004FD12B /* LanguageManager.swift in Sources */,
+				3B74B759216EA70D004FD12B /* Label.swift in Sources */,
 				3B58D3112168DCE7000041EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
