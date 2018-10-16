@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3EBC7B21767F8000E100C1 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC7921767F8000E100C1 /* CheckBox.swift */; };
+		3B3EBC7C21767F8000E100C1 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC7A21767F8000E100C1 /* DateUtils.swift */; };
+		3B3EBC912176806B00E100C1 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC812176806B00E100C1 /* BaseCell.swift */; };
+		3B3EBC922176806B00E100C1 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC822176806B00E100C1 /* ButtonCell.swift */; };
+		3B3EBC932176806B00E100C1 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3EBC832176806B00E100C1 /* ButtonCell.xib */; };
+		3B3EBC942176806B00E100C1 /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC852176806B00E100C1 /* CellType.swift */; };
+		3B3EBC952176806B00E100C1 /* DropdownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC862176806B00E100C1 /* DropdownCell.swift */; };
+		3B3EBC962176806B00E100C1 /* DropdownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3EBC872176806B00E100C1 /* DropdownCell.xib */; };
+		3B3EBC972176806B00E100C1 /* InputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC882176806B00E100C1 /* InputCell.swift */; };
+		3B3EBC982176806B00E100C1 /* InputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3EBC892176806B00E100C1 /* InputCell.xib */; };
+		3B3EBC992176806B00E100C1 /* InputLongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC8A2176806B00E100C1 /* InputLongCell.swift */; };
+		3B3EBC9A2176806B00E100C1 /* InputLongCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3EBC8B2176806B00E100C1 /* InputLongCell.xib */; };
+		3B3EBC9B2176806B00E100C1 /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC8C2176806B00E100C1 /* ViewCell.swift */; };
+		3B3EBC9C2176806B00E100C1 /* ViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3EBC8D2176806B00E100C1 /* ViewCell.xib */; };
+		3B3EBC9D2176806B00E100C1 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC8F2176806B00E100C1 /* UITableView+Extensions.swift */; };
+		3B3EBC9E2176806B00E100C1 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC902176806B00E100C1 /* UITableViewCell+Extensions.swift */; };
+		3B3EBCA6217688A300E100C1 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCA0217688A300E100C1 /* ColorExtension.swift */; };
+		3B3EBCA7217688A300E100C1 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCA1217688A300E100C1 /* ViewExtension.swift */; };
+		3B3EBCA8217688A300E100C1 /* CustomPaddingTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCA3217688A300E100C1 /* CustomPaddingTF.swift */; };
+		3B3EBCA9217688A300E100C1 /* LoaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCA4217688A300E100C1 /* LoaderApp.swift */; };
+		3B3EBCAA217688A300E100C1 /* LoaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCA5217688A300E100C1 /* LoaderContainer.swift */; };
+		3B3EBCAC21768F3600E100C1 /* MainBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCAB21768F3600E100C1 /* MainBaseViewController.swift */; };
+		3B3EBCAE21769AED00E100C1 /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCAD21769AED00E100C1 /* SignUpService.swift */; };
+		3B3EBCB021769E4500E100C1 /* AppDelegate+loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCAF21769E4500E100C1 /* AppDelegate+loader.swift */; };
 		3B58D3112168DCE7000041EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58D3102168DCE7000041EE /* AppDelegate.swift */; };
 		3B58D3132168DCE7000041EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58D3122168DCE7000041EE /* ViewController.swift */; };
 		3B58D3162168DCE7000041EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B58D3142168DCE7000041EE /* Main.storyboard */; };
@@ -29,6 +53,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3EBC7921767F8000E100C1 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		3B3EBC7A21767F8000E100C1 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		3B3EBC812176806B00E100C1 /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		3B3EBC822176806B00E100C1 /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		3B3EBC832176806B00E100C1 /* ButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		3B3EBC852176806B00E100C1 /* CellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
+		3B3EBC862176806B00E100C1 /* DropdownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownCell.swift; sourceTree = "<group>"; };
+		3B3EBC872176806B00E100C1 /* DropdownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropdownCell.xib; sourceTree = "<group>"; };
+		3B3EBC882176806B00E100C1 /* InputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputCell.swift; sourceTree = "<group>"; };
+		3B3EBC892176806B00E100C1 /* InputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputCell.xib; sourceTree = "<group>"; };
+		3B3EBC8A2176806B00E100C1 /* InputLongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputLongCell.swift; sourceTree = "<group>"; };
+		3B3EBC8B2176806B00E100C1 /* InputLongCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputLongCell.xib; sourceTree = "<group>"; };
+		3B3EBC8C2176806B00E100C1 /* ViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
+		3B3EBC8D2176806B00E100C1 /* ViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewCell.xib; sourceTree = "<group>"; };
+		3B3EBC8F2176806B00E100C1 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		3B3EBC902176806B00E100C1 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		3B3EBCA0217688A300E100C1 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		3B3EBCA1217688A300E100C1 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		3B3EBCA3217688A300E100C1 /* CustomPaddingTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPaddingTF.swift; sourceTree = "<group>"; };
+		3B3EBCA4217688A300E100C1 /* LoaderApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderApp.swift; sourceTree = "<group>"; };
+		3B3EBCA5217688A300E100C1 /* LoaderContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderContainer.swift; sourceTree = "<group>"; };
+		3B3EBCAB21768F3600E100C1 /* MainBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBaseViewController.swift; sourceTree = "<group>"; };
+		3B3EBCAD21769AED00E100C1 /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		3B3EBCAF21769E4500E100C1 /* AppDelegate+loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+loader.swift"; sourceTree = "<group>"; };
 		3B58D30D2168DCE7000041EE /* InstaShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B58D3102168DCE7000041EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B58D3122168DCE7000041EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +126,81 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3B3EBC7821767F4100E100C1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3B3EBCA2217688A300E100C1 /* CustomViews */,
+				3B3EBC9F217688A300E100C1 /* Extensions */,
+				3B3EBC7921767F8000E100C1 /* CheckBox.swift */,
+				3B3EBC7A21767F8000E100C1 /* DateUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3B3EBC7F2176806B00E100C1 /* MultipleCells */ = {
+			isa = PBXGroup;
+			children = (
+				3B3EBC802176806B00E100C1 /* Cells */,
+				3B3EBC8E2176806B00E100C1 /* Extensions */,
+			);
+			path = MultipleCells;
+			sourceTree = "<group>";
+		};
+		3B3EBC802176806B00E100C1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3B3EBC812176806B00E100C1 /* BaseCell.swift */,
+				3B3EBC822176806B00E100C1 /* ButtonCell.swift */,
+				3B3EBC832176806B00E100C1 /* ButtonCell.xib */,
+				3B3EBC842176806B00E100C1 /* CellType */,
+				3B3EBC862176806B00E100C1 /* DropdownCell.swift */,
+				3B3EBC872176806B00E100C1 /* DropdownCell.xib */,
+				3B3EBC882176806B00E100C1 /* InputCell.swift */,
+				3B3EBC892176806B00E100C1 /* InputCell.xib */,
+				3B3EBC8A2176806B00E100C1 /* InputLongCell.swift */,
+				3B3EBC8B2176806B00E100C1 /* InputLongCell.xib */,
+				3B3EBC8C2176806B00E100C1 /* ViewCell.swift */,
+				3B3EBC8D2176806B00E100C1 /* ViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3B3EBC842176806B00E100C1 /* CellType */ = {
+			isa = PBXGroup;
+			children = (
+				3B3EBC852176806B00E100C1 /* CellType.swift */,
+			);
+			path = CellType;
+			sourceTree = "<group>";
+		};
+		3B3EBC8E2176806B00E100C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B3EBC8F2176806B00E100C1 /* UITableView+Extensions.swift */,
+				3B3EBC902176806B00E100C1 /* UITableViewCell+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3B3EBC9F217688A300E100C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B3EBCA0217688A300E100C1 /* ColorExtension.swift */,
+				3B3EBCA1217688A300E100C1 /* ViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3B3EBCA2217688A300E100C1 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				3B3EBCA3217688A300E100C1 /* CustomPaddingTF.swift */,
+				3B3EBCA4217688A300E100C1 /* LoaderApp.swift */,
+				3B3EBCA5217688A300E100C1 /* LoaderContainer.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		3B58D3042168DCE7000041EE = {
 			isa = PBXGroup;
 			children = (
@@ -99,11 +222,14 @@
 		3B58D30F2168DCE7000041EE /* InstaShop */ = {
 			isa = PBXGroup;
 			children = (
+				3B3EBC7F2176806B00E100C1 /* MultipleCells */,
+				3B3EBC7821767F4100E100C1 /* Utilities */,
 				3B74B754216EA6D8004FD12B /* Component */,
 				3B74B73A216EA1B9004FD12B /* Authentication */,
 				3B74B744216EA1B9004FD12B /* Constants.swift */,
 				3B74B73E216EA1B9004FD12B /* Ressources */,
 				3B58D3102168DCE7000041EE /* AppDelegate.swift */,
+				3B3EBCAF21769E4500E100C1 /* AppDelegate+loader.swift */,
 				3B58D3122168DCE7000041EE /* ViewController.swift */,
 				3B58D3142168DCE7000041EE /* Main.storyboard */,
 				3B58D31A2168DCE8000041EE /* Assets.xcassets */,
@@ -118,6 +244,7 @@
 		3B74B73A216EA1B9004FD12B /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				3B3EBCAB21768F3600E100C1 /* MainBaseViewController.swift */,
 				3B74B73B216EA1B9004FD12B /* SignUp */,
 			);
 			name = Authentication;
@@ -129,6 +256,7 @@
 			children = (
 				3B74B73C216EA1B9004FD12B /* SignUpViewController.swift */,
 				3B74B73D216EA1B9004FD12B /* SignUpViewController.xib */,
+				3B3EBCAD21769AED00E100C1 /* SignUpService.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -234,13 +362,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3EBC962176806B00E100C1 /* DropdownCell.xib in Resources */,
 				3B74B749216EA1BA004FD12B /* calibri.ttf in Resources */,
+				3B3EBC9C2176806B00E100C1 /* ViewCell.xib in Resources */,
+				3B3EBC982176806B00E100C1 /* InputCell.xib in Resources */,
 				3B74B74A216EA1BA004FD12B /* cortoba.ttf in Resources */,
 				3B74B748216EA1BA004FD12B /* bein_ar_normal.ttf in Resources */,
 				3B58D31E2168DCE8000041EE /* LaunchScreen.storyboard in Resources */,
 				3B74B752216EA346004FD12B /* Localizable.strings in Resources */,
+				3B3EBC9A2176806B00E100C1 /* InputLongCell.xib in Resources */,
 				3B74B747216EA1BA004FD12B /* bein_ar_black.ttf in Resources */,
 				3B58D31B2168DCE8000041EE /* Assets.xcassets in Resources */,
+				3B3EBC932176806B00E100C1 /* ButtonCell.xib in Resources */,
 				3B74B746216EA1BA004FD12B /* SignUpViewController.xib in Resources */,
 				3B58D3162168DCE7000041EE /* Main.storyboard in Resources */,
 			);
@@ -259,12 +392,14 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -296,15 +431,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3EBC7C21767F8000E100C1 /* DateUtils.swift in Sources */,
+				3B3EBC922176806B00E100C1 /* ButtonCell.swift in Sources */,
+				3B3EBC992176806B00E100C1 /* InputLongCell.swift in Sources */,
 				3B74B74B216EA1BA004FD12B /* Constants.swift in Sources */,
 				3B74B758216EA70D004FD12B /* Button.swift in Sources */,
+				3B3EBCB021769E4500E100C1 /* AppDelegate+loader.swift in Sources */,
+				3B3EBC952176806B00E100C1 /* DropdownCell.swift in Sources */,
+				3B3EBCA7217688A300E100C1 /* ViewExtension.swift in Sources */,
+				3B3EBC9B2176806B00E100C1 /* ViewCell.swift in Sources */,
 				3B58D3132168DCE7000041EE /* ViewController.swift in Sources */,
+				3B3EBC912176806B00E100C1 /* BaseCell.swift in Sources */,
+				3B3EBCA9217688A300E100C1 /* LoaderApp.swift in Sources */,
 				3B74B75A216EA70D004FD12B /* TextField.swift in Sources */,
+				3B3EBC7B21767F8000E100C1 /* CheckBox.swift in Sources */,
 				3B58D3192168DCE7000041EE /* InstaShop.xcdatamodeld in Sources */,
+				3B3EBCA6217688A300E100C1 /* ColorExtension.swift in Sources */,
+				3B3EBC972176806B00E100C1 /* InputCell.swift in Sources */,
+				3B3EBCAE21769AED00E100C1 /* SignUpService.swift in Sources */,
 				3B74B745216EA1BA004FD12B /* SignUpViewController.swift in Sources */,
 				3B74B75C216EA798004FD12B /* LanguageManager.swift in Sources */,
+				3B3EBCAC21768F3600E100C1 /* MainBaseViewController.swift in Sources */,
+				3B3EBC9D2176806B00E100C1 /* UITableView+Extensions.swift in Sources */,
+				3B3EBC942176806B00E100C1 /* CellType.swift in Sources */,
 				3B74B759216EA70D004FD12B /* Label.swift in Sources */,
+				3B3EBC9E2176806B00E100C1 /* UITableViewCell+Extensions.swift in Sources */,
 				3B58D3112168DCE7000041EE /* AppDelegate.swift in Sources */,
+				3B3EBCAA217688A300E100C1 /* LoaderContainer.swift in Sources */,
+				3B3EBCA8217688A300E100C1 /* CustomPaddingTF.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

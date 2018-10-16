@@ -9,4 +9,5 @@ target 'InstaShop' do
   pod 'LGSideMenuController'
   pod 'Alamofire', '~> 4.7'
   pod 'DLRadioButton', '~> 1.4'
+  pod 'ObjectMapper', '~> 3.1'
 end

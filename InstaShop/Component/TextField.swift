@@ -22,11 +22,26 @@ class TextField : UITextField
             
         }
         self .setPlaceholderText()
+        self.addBottomBorderWithColor(color: .lightGray , height: 1 )
     }
     func setPlaceholderText ()  {
         let  string=NSLocalizedString(self.key, comment: "")
         self.placeholder=string
         
     }
+    
+}
+
+extension TextField {
+    func addBottomBorderWithColor(color: UIColor, height: CGFloat) {
+        let border = UIView()
+        border.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        border.frame = CGRect(x:self.frame.origin.x,
+                              y :self.frame.origin.y+self.frame.height-height, width : self.frame.width,height: height)
+        border.backgroundColor = color
+        self.superview!.insertSubview(border, aboveSubview: self)
+    }
+    
+   
 }
 

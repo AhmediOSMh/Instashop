@@ -5,4 +5,13 @@
   Created by Ahmed Mh on 10/10/2018.
   Copyright © 2018 Ahmed Mh. All rights reserved.
 */
+//SignUp
+
 "BuyFromNear_Lbl"           = "تبضع من المتاجر القريبة اليك" ;
+"name_Key"                          = "الاسم" ;
+"email_key"                         = "البريد الالكتروني" ;
+"tel_key"                           = "رقم الموبايل" ;
+"password_key"                      = "كلمة السر" ;
+"Validation_Alert"                  = "يرجى ملء جميع الخانات الفارغة" ;
+"SignUpTitle_key"                   = "انشأ حساب" ;
+"EmailNotValidMsg_key"              = "يرجى التحقق من البريد الالكتروني" ;

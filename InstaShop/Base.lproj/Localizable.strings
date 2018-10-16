@@ -5,4 +5,13 @@
   Created by Ahmed Mh on 10/10/2018.
   Copyright © 2018 Ahmed Mh. All rights reserved.
 */
+//SignUp
+
 "BuyFromNear_Lbl"                   = "Buy from near " ;
+"name_Key"                          = "Name" ;
+"email_key"                         = "Email" ;
+"tel_key"                           = "Phone number" ;
+"password_key"                      = "Password" ;
+"Validation_Alert"                  = "please fill all empty fields" ;
+"SignUpTitle_key"                   = "Create an account" ;
+"EmailNotValidMsg_key"              = "please enter a valid email" ;
