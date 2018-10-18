@@ -15,3 +15,5 @@
 "Validation_Alert"                  = "يرجى ملء جميع الخانات الفارغة" ;
 "SignUpTitle_key"                   = "انشأ حساب" ;
 "EmailNotValidMsg_key"              = "يرجى التحقق من البريد الالكتروني" ;
+"man_gender_Key"                    = "ذكر" ;
+"woman_gender_Key"                  = "انثى" ;

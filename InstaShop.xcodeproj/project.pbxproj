@@ -31,6 +31,7 @@
 		3B3EBCAC21768F3600E100C1 /* MainBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCAB21768F3600E100C1 /* MainBaseViewController.swift */; };
 		3B3EBCAE21769AED00E100C1 /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCAD21769AED00E100C1 /* SignUpService.swift */; };
 		3B3EBCB021769E4500E100C1 /* AppDelegate+loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCAF21769E4500E100C1 /* AppDelegate+loader.swift */; };
+		3B4FDC902178B76600E73BB7 /* CustomRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4FDC8F2178B76600E73BB7 /* CustomRadioButton.swift */; };
 		3B58D3112168DCE7000041EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58D3102168DCE7000041EE /* AppDelegate.swift */; };
 		3B58D3132168DCE7000041EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58D3122168DCE7000041EE /* ViewController.swift */; };
 		3B58D3162168DCE7000041EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B58D3142168DCE7000041EE /* Main.storyboard */; };
@@ -77,6 +78,7 @@
 		3B3EBCAB21768F3600E100C1 /* MainBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBaseViewController.swift; sourceTree = "<group>"; };
 		3B3EBCAD21769AED00E100C1 /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
 		3B3EBCAF21769E4500E100C1 /* AppDelegate+loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+loader.swift"; sourceTree = "<group>"; };
+		3B4FDC8F2178B76600E73BB7 /* CustomRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRadioButton.swift; sourceTree = "<group>"; };
 		3B58D30D2168DCE7000041EE /* InstaShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B58D3102168DCE7000041EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B58D3122168DCE7000041EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				3B74B755216EA70C004FD12B /* Button.swift */,
 				3B74B756216EA70D004FD12B /* Label.swift */,
 				3B74B757216EA70D004FD12B /* TextField.swift */,
+				3B4FDC8F2178B76600E73BB7 /* CustomRadioButton.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				3B3EBCB021769E4500E100C1 /* AppDelegate+loader.swift in Sources */,
 				3B3EBC952176806B00E100C1 /* DropdownCell.swift in Sources */,
 				3B3EBCA7217688A300E100C1 /* ViewExtension.swift in Sources */,
+				3B4FDC902178B76600E73BB7 /* CustomRadioButton.swift in Sources */,
 				3B3EBC9B2176806B00E100C1 /* ViewCell.swift in Sources */,
 				3B58D3132168DCE7000041EE /* ViewController.swift in Sources */,
 				3B3EBC912176806B00E100C1 /* BaseCell.swift in Sources */,

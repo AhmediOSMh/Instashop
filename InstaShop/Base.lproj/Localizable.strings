@@ -15,3 +15,5 @@
 "Validation_Alert"                  = "please fill all empty fields" ;
 "SignUpTitle_key"                   = "Create an account" ;
 "EmailNotValidMsg_key"              = "please enter a valid email" ;
+"man_gender_Key"                    = "man" ;
+"woman_gender_Key"                  = "woman" ;
