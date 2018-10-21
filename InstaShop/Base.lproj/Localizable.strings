@@ -17,3 +17,9 @@
 "EmailNotValidMsg_key"              = "please enter a valid email" ;
 "man_gender_Key"                    = "man" ;
 "woman_gender_Key"                  = "woman" ;
+"Alert_ChangeLanguage_Key"          = "Are you sure you want to close the app? Please notice that you will need to restart the app manually";
+"OK_Key"                            = "OK";
+"concel_Key"                        = "Cancel";
+
+"OpenApp_Key"                       = "";
+"ChangeToArabic_Key"                = "" ; 

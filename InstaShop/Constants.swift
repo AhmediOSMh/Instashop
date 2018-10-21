@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+let BaseURL = "https://aliabderrahim1981.000webhostapp.com/api_app_market/"
+let signUpURL = BaseURL + "register_costumer.php"
+

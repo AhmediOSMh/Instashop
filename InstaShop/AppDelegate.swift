@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
        //  LanguageManger.shared.defaultLanguage = .en
-        LanguageManger.shared.setLanguage(language: .en)
+        L102Localizer.DoTheMagic()
         let SignUp = SignUpViewController()
         let navVC:UINavigationController = UINavigationController(rootViewController: SignUp)
         self.window?.rootViewController = navVC;

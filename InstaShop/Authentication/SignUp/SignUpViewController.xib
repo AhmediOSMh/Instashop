@@ -6,28 +6,47 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="bein_ar_black.ttf">
+            <string>beINBlack</string>
+        </array>
+        <array key="bein_ar_normal.ttf">
+            <string>beINNormal</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="InstaShop" customModuleProvider="target">
             <connections>
+                <outlet property="ChangeLangBtn" destination="AoR-de-GFd" id="xDj-YT-aJA"/>
+                <outlet property="LoginLabel" destination="Vim-O0-gcx" id="QOL-dL-5H2"/>
+                <outlet property="email" destination="71N-mz-gJL" id="Oik-Ij-njP"/>
+                <outlet property="iconCardLeft" destination="vWF-j5-z6j" id="Xj9-8z-sg6"/>
+                <outlet property="iconCardRight" destination="Idp-ND-R4r" id="xDc-PW-ji6"/>
+                <outlet property="manGenderBtn" destination="Wwp-mv-glr" id="qj2-W8-XVw"/>
+                <outlet property="name" destination="kbg-He-H3c" id="NgH-gM-Xfl"/>
+                <outlet property="password" destination="JzC-3v-WNz" id="7O1-C9-Def"/>
+                <outlet property="signUpBtn" destination="5Ou-W8-0Kz" id="p1c-zc-enJ"/>
+                <outlet property="tel" destination="um2-By-1zo" id="3IJ-V6-ODP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="womanGenderBtn" destination="NHQ-uc-LzO" id="ry7-8a-rBa"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT" customClass="view">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2wb-ex-DMv">
-                    <rect key="frame" x="-0.5" y="10" width="375" height="667"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wb-ex-DMv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JtB-Fn-5Dl">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO-white" translatesAutoresizingMaskIntoConstraints="NO" id="BZF-rL-Gcj">
-                                    <rect key="frame" x="112.5" y="27.5" width="150" height="73"/>
+                                    <rect key="frame" x="113" y="28" width="150" height="73"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="73" id="Lbf-bl-H1U"/>
                                         <constraint firstAttribute="width" constant="150" id="MEl-Jg-HZc"/>
@@ -44,41 +63,228 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBR-mT-W4R">
                             <rect key="frame" x="0.0" y="128" width="375" height="50"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Idp-ND-R4r">
-                                    <rect key="frame" x="208.5" y="15" width="20" height="20"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping cart_1" translatesAutoresizingMaskIntoConstraints="NO" id="Idp-ND-R4r">
+                                    <rect key="frame" x="211" y="15" width="20" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="20" id="08o-dF-LLg"/>
                                         <constraint firstAttribute="height" constant="20" id="t9R-rH-TaD"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsX-CW-881">
-                                    <rect key="frame" x="166.5" y="15" width="42" height="21"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsX-CW-881" customClass="Label" customModule="InstaShop" customModuleProvider="target">
+                                    <rect key="frame" x="167" y="15" width="42" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21" id="c2o-YG-mFS"/>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="kbc-ts-9sD"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="beINBlack" family="beIN Black " pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="key" value="BuyFromNear_Lbl"/>
+                                    </userDefinedRuntimeAttributes>
                                 </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping cart_1" translatesAutoresizingMaskIntoConstraints="NO" id="vWF-j5-z6j">
+                                    <rect key="frame" x="145" y="15" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="OFg-xD-GuD"/>
+                                        <constraint firstAttribute="height" constant="20" id="x29-gM-rmk"/>
+                                    </constraints>
+                                </imageView>
                             </subviews>
                             <color key="backgroundColor" red="0.18431372549019609" green="0.50980392156862742" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstItem="Idp-ND-R4r" firstAttribute="leading" secondItem="xsX-CW-881" secondAttribute="trailing" id="5TE-Gp-KMw"/>
+                                <constraint firstItem="vWF-j5-z6j" firstAttribute="centerY" secondItem="xsX-CW-881" secondAttribute="centerY" id="1go-K8-OJ4"/>
+                                <constraint firstItem="Idp-ND-R4r" firstAttribute="leading" secondItem="xsX-CW-881" secondAttribute="trailing" constant="2" id="5TE-Gp-KMw"/>
                                 <constraint firstItem="Idp-ND-R4r" firstAttribute="centerY" secondItem="KBR-mT-W4R" secondAttribute="centerY" id="KJD-1X-7ih"/>
                                 <constraint firstAttribute="height" constant="50" id="PUt-55-DqH"/>
                                 <constraint firstItem="xsX-CW-881" firstAttribute="centerY" secondItem="KBR-mT-W4R" secondAttribute="centerY" id="Rft-PV-IAO"/>
                                 <constraint firstItem="xsX-CW-881" firstAttribute="centerX" secondItem="KBR-mT-W4R" secondAttribute="centerX" id="YOc-QL-R4E"/>
+                                <constraint firstItem="xsX-CW-881" firstAttribute="leading" secondItem="vWF-j5-z6j" secondAttribute="trailing" constant="2" id="dNf-ye-t46"/>
                             </constraints>
                         </view>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kbg-He-H3c" customClass="TextField" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="15" y="229" width="345" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="sQp-w9-803"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="name"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="key" value="name_Key"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="71N-mz-gJL" customClass="TextField" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="15" y="299" width="345" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="JeV-La-GjI"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="key" value="email_key"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="um2-By-1zo" customClass="TextField" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="15" y="369" width="345" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Aat-w1-mMF"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad" textContentType="tel"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="key" value="tel_key"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JzC-3v-WNz" customClass="TextField" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="15" y="439" width="345" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Dbd-sr-yEF"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="key" value="password_key"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwp-mv-glr" customClass="RadioButton" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="132" y="499" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="ecH-b1-6kF"/>
+                                <constraint firstAttribute="height" constant="20" id="sna-Rd-g7o"/>
+                            </constraints>
+                            <state key="normal" image="uncheckedBtn"/>
+                            <connections>
+                                <action selector="ManGenderAction:" destination="-1" eventType="touchUpInside" id="dGb-ZN-YCH"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaS-eu-fjZ" customClass="Label" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="67" y="499" width="60" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="hUC-jq-h0m"/>
+                                <constraint firstAttribute="height" constant="20" id="s6A-Fl-aCH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="key" value="man_gender_Key"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHQ-uc-LzO" customClass="RadioButton" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="222" y="499" width="20" height="20"/>
+                            <state key="normal" image="uncheckedBtn"/>
+                            <connections>
+                                <action selector="WomanGenderAction:" destination="-1" eventType="touchUpInside" id="bVL-na-XJl"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3Y-Ei-ahW" customClass="Label" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="182" y="499" width="35" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="lyo-uk-hsa"/>
+                                <constraint firstAttribute="width" constant="34.5" id="oM8-49-w0s"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="key" value="woman_gender_Key"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ou-W8-0Kz" customClass="Button" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="112" y="538" width="150" height="40"/>
+                            <color key="backgroundColor" red="0.050980392159999999" green="0.43137254899999999" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="f38-z2-gxe"/>
+                                <constraint firstAttribute="width" constant="150" id="vQv-VH-hPH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="key" value="SignUpTitle_key"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="signUp:" destination="-1" eventType="touchUpInside" id="ktq-dV-J1Z"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vim-O0-gcx">
+                            <rect key="frame" x="112" y="586" width="150" height="33"/>
+                            <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2X2-2M-Ar9" customClass="Button" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="20" y="629" width="150" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="Mfs-5j-zXH"/>
+                                <constraint firstAttribute="height" constant="30" id="wKE-kR-nFW"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="key" value="OpenApp_Key"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="OpenAppWithoutAccount:" destination="-1" eventType="touchUpInside" id="ml6-f8-UXf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoR-de-GFd" customClass="Button" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="205" y="629" width="150" height="30"/>
+                            <connections>
+                                <action selector="ChangeLanguage:" destination="-1" eventType="touchUpInside" id="6Lj-9b-tyC"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="Vim-O0-gcx" firstAttribute="top" secondItem="5Ou-W8-0Kz" secondAttribute="bottom" constant="8" id="10p-DN-7Jk"/>
                         <constraint firstItem="JtB-Fn-5Dl" firstAttribute="width" secondItem="2wb-ex-DMv" secondAttribute="width" id="1aa-ro-2b3"/>
+                        <constraint firstItem="NHQ-uc-LzO" firstAttribute="centerY" secondItem="Wwp-mv-glr" secondAttribute="centerY" id="259-Zl-fh4"/>
                         <constraint firstItem="KBR-mT-W4R" firstAttribute="width" secondItem="2wb-ex-DMv" secondAttribute="width" id="2FQ-sY-VL5"/>
+                        <constraint firstItem="Wwp-mv-glr" firstAttribute="top" secondItem="JzC-3v-WNz" secondAttribute="bottom" constant="10" id="2kv-dU-CQb"/>
+                        <constraint firstItem="Vim-O0-gcx" firstAttribute="width" secondItem="5Ou-W8-0Kz" secondAttribute="width" id="31a-sy-wWQ"/>
+                        <constraint firstItem="5Ou-W8-0Kz" firstAttribute="top" secondItem="JzC-3v-WNz" secondAttribute="bottom" constant="49" id="3Tl-LT-yJf"/>
+                        <constraint firstItem="NHQ-uc-LzO" firstAttribute="trailing" secondItem="5Ou-W8-0Kz" secondAttribute="trailing" constant="-20" id="4Gd-9A-8JR"/>
                         <constraint firstItem="KBR-mT-W4R" firstAttribute="centerX" secondItem="2wb-ex-DMv" secondAttribute="centerX" id="4Vc-z4-JZa"/>
+                        <constraint firstItem="SaS-eu-fjZ" firstAttribute="centerY" secondItem="Wwp-mv-glr" secondAttribute="centerY" id="5FR-zI-oGq"/>
                         <constraint firstItem="JtB-Fn-5Dl" firstAttribute="centerX" secondItem="2wb-ex-DMv" secondAttribute="centerX" id="6mt-IR-m51"/>
+                        <constraint firstItem="71N-mz-gJL" firstAttribute="width" secondItem="kbg-He-H3c" secondAttribute="width" id="88k-e6-y1c"/>
+                        <constraint firstItem="JzC-3v-WNz" firstAttribute="centerX" secondItem="um2-By-1zo" secondAttribute="centerX" id="9Ne-Q4-cv4"/>
+                        <constraint firstItem="71N-mz-gJL" firstAttribute="centerX" secondItem="kbg-He-H3c" secondAttribute="centerX" id="9eE-2J-tGP"/>
                         <constraint firstItem="JtB-Fn-5Dl" firstAttribute="top" secondItem="2wb-ex-DMv" secondAttribute="top" id="AJl-4R-C2I"/>
+                        <constraint firstItem="um2-By-1zo" firstAttribute="top" secondItem="71N-mz-gJL" secondAttribute="bottom" constant="20" id="JJC-my-c2v"/>
+                        <constraint firstItem="X3Y-Ei-ahW" firstAttribute="centerY" secondItem="NHQ-uc-LzO" secondAttribute="centerY" id="JdS-XH-avg"/>
+                        <constraint firstItem="kbg-He-H3c" firstAttribute="top" secondItem="KBR-mT-W4R" secondAttribute="bottom" constant="51" id="K06-v9-zrP"/>
+                        <constraint firstItem="71N-mz-gJL" firstAttribute="top" secondItem="kbg-He-H3c" secondAttribute="bottom" constant="20" id="OPR-iN-WeJ"/>
+                        <constraint firstItem="NHQ-uc-LzO" firstAttribute="leading" secondItem="X3Y-Ei-ahW" secondAttribute="trailing" constant="5" id="Ojg-0S-OEF"/>
+                        <constraint firstItem="JzC-3v-WNz" firstAttribute="width" secondItem="um2-By-1zo" secondAttribute="width" id="Qbi-En-GdD"/>
+                        <constraint firstItem="2X2-2M-Ar9" firstAttribute="top" secondItem="Vim-O0-gcx" secondAttribute="bottom" constant="10" id="QsP-7Q-OYV"/>
+                        <constraint firstItem="AoR-de-GFd" firstAttribute="width" secondItem="2X2-2M-Ar9" secondAttribute="width" id="TDg-Gc-0VC"/>
                         <constraint firstItem="KBR-mT-W4R" firstAttribute="top" secondItem="JtB-Fn-5Dl" secondAttribute="bottom" id="WSw-Nq-SCb"/>
+                        <constraint firstItem="AoR-de-GFd" firstAttribute="centerY" secondItem="2X2-2M-Ar9" secondAttribute="centerY" id="Whi-T6-gV7"/>
+                        <constraint firstItem="JzC-3v-WNz" firstAttribute="top" secondItem="um2-By-1zo" secondAttribute="bottom" constant="20" id="XjS-8B-cGo"/>
+                        <constraint firstItem="NHQ-uc-LzO" firstAttribute="height" secondItem="Wwp-mv-glr" secondAttribute="height" id="Z48-SZ-eEj"/>
+                        <constraint firstItem="um2-By-1zo" firstAttribute="width" secondItem="71N-mz-gJL" secondAttribute="width" id="aJ9-LR-9gu"/>
+                        <constraint firstItem="5Ou-W8-0Kz" firstAttribute="centerX" secondItem="JzC-3v-WNz" secondAttribute="centerX" id="bLM-4k-O4L"/>
+                        <constraint firstItem="kbg-He-H3c" firstAttribute="width" secondItem="KBR-mT-W4R" secondAttribute="width" constant="-30" id="ccN-Rt-gLh"/>
+                        <constraint firstAttribute="trailing" secondItem="JtB-Fn-5Dl" secondAttribute="trailing" id="cjm-af-ouF"/>
+                        <constraint firstItem="Vim-O0-gcx" firstAttribute="centerX" secondItem="5Ou-W8-0Kz" secondAttribute="centerX" id="fe3-Zk-9I2"/>
+                        <constraint firstItem="2X2-2M-Ar9" firstAttribute="bottom" secondItem="2wb-ex-DMv" secondAttribute="bottomMargin" id="hGW-jd-SXp"/>
+                        <constraint firstItem="Wwp-mv-glr" firstAttribute="leading" secondItem="5Ou-W8-0Kz" secondAttribute="leading" constant="20" id="hUD-Qs-B5h"/>
+                        <constraint firstItem="um2-By-1zo" firstAttribute="centerX" secondItem="71N-mz-gJL" secondAttribute="centerX" id="i8p-mU-uI5"/>
+                        <constraint firstItem="NHQ-uc-LzO" firstAttribute="width" secondItem="Wwp-mv-glr" secondAttribute="width" id="iD7-ll-MZc"/>
+                        <constraint firstItem="AoR-de-GFd" firstAttribute="height" secondItem="2X2-2M-Ar9" secondAttribute="height" id="uVS-jk-QAb"/>
+                        <constraint firstItem="Wwp-mv-glr" firstAttribute="leading" secondItem="SaS-eu-fjZ" secondAttribute="trailing" constant="5" id="wVr-yy-yAL"/>
+                        <constraint firstItem="kbg-He-H3c" firstAttribute="centerX" secondItem="KBR-mT-W4R" secondAttribute="centerX" id="wgG-JJ-HyI"/>
                     </constraints>
                 </scrollView>
             </subviews>
@@ -86,14 +292,20 @@
             <constraints>
                 <constraint firstItem="2wb-ex-DMv" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="9UC-Mc-YcR"/>
                 <constraint firstItem="2wb-ex-DMv" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="CjK-yr-fpO"/>
-                <constraint firstItem="2wb-ex-DMv" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jRE-5y-ib0"/>
-                <constraint firstItem="2wb-ex-DMv" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="nPO-1D-v5D"/>
+                <constraint firstAttribute="trailing" secondItem="AoR-de-GFd" secondAttribute="trailing" constant="20" id="FqR-h9-5Ps"/>
+                <constraint firstItem="2X2-2M-Ar9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="h2N-jB-esh"/>
+                <constraint firstItem="2wb-ex-DMv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jRE-5y-ib0"/>
+                <constraint firstItem="2wb-ex-DMv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="nPO-1D-v5D"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="key" value="ByFromOther_Lbl"/>
+            </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="26.5" y="52.5"/>
         </view>
     </objects>
     <resources>
         <image name="LOGO-white" width="204" height="100"/>
+        <image name="shopping cart_1" width="24" height="23"/>
+        <image name="uncheckedBtn" width="50" height="50"/>
     </resources>
 </document>

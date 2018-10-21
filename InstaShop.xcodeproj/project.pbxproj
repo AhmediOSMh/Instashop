@@ -28,7 +28,6 @@
 		3B3EBCA8217688A300E100C1 /* CustomPaddingTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCA3217688A300E100C1 /* CustomPaddingTF.swift */; };
 		3B3EBCA9217688A300E100C1 /* LoaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCA4217688A300E100C1 /* LoaderApp.swift */; };
 		3B3EBCAA217688A300E100C1 /* LoaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCA5217688A300E100C1 /* LoaderContainer.swift */; };
-		3B3EBCAC21768F3600E100C1 /* MainBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCAB21768F3600E100C1 /* MainBaseViewController.swift */; };
 		3B3EBCAE21769AED00E100C1 /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCAD21769AED00E100C1 /* SignUpService.swift */; };
 		3B3EBCB021769E4500E100C1 /* AppDelegate+loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBCAF21769E4500E100C1 /* AppDelegate+loader.swift */; };
 		3B4FDC902178B76600E73BB7 /* CustomRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4FDC8F2178B76600E73BB7 /* CustomRadioButton.swift */; };
@@ -50,6 +49,14 @@
 		3B74B759216EA70D004FD12B /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B756216EA70D004FD12B /* Label.swift */; };
 		3B74B75A216EA70D004FD12B /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B757216EA70D004FD12B /* TextField.swift */; };
 		3B74B75C216EA798004FD12B /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B75B216EA797004FD12B /* LanguageManager.swift */; };
+		3BDD3442217B341A003035CF /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3441217B341A003035CF /* Localizable.swift */; };
+		3BDD3445217B37E2003035CF /* L012Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3443217B37E2003035CF /* L012Localizer.swift */; };
+		3BDD3446217B37E2003035CF /* L102Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3444217B37E2003035CF /* L102Language.swift */; };
+		3BDD344A217B4594003035CF /* AllStoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3448217B4594003035CF /* AllStoresViewController.swift */; };
+		3BDD344B217B4594003035CF /* AllStoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BDD3449217B4594003035CF /* AllStoresViewController.xib */; };
+		3BDD3451217B48E9003035CF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3450217B48E9003035CF /* BaseViewController.swift */; };
+		3BDD3455217B4AE4003035CF /* GPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3453217B4AE4003035CF /* GPSViewController.swift */; };
+		3BDD3456217B4AE4003035CF /* GPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BDD3454217B4AE4003035CF /* GPSViewController.xib */; };
 		3DFBD236505E18CD6293B7D8 /* Pods_InstaShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C9CE6C4A84D17040A77FE6 /* Pods_InstaShop.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +82,6 @@
 		3B3EBCA3217688A300E100C1 /* CustomPaddingTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPaddingTF.swift; sourceTree = "<group>"; };
 		3B3EBCA4217688A300E100C1 /* LoaderApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderApp.swift; sourceTree = "<group>"; };
 		3B3EBCA5217688A300E100C1 /* LoaderContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderContainer.swift; sourceTree = "<group>"; };
-		3B3EBCAB21768F3600E100C1 /* MainBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBaseViewController.swift; sourceTree = "<group>"; };
 		3B3EBCAD21769AED00E100C1 /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
 		3B3EBCAF21769E4500E100C1 /* AppDelegate+loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+loader.swift"; sourceTree = "<group>"; };
 		3B4FDC8F2178B76600E73BB7 /* CustomRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRadioButton.swift; sourceTree = "<group>"; };
@@ -93,7 +99,7 @@
 		3B74B741216EA1B9004FD12B /* bein_ar_normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bein_ar_normal.ttf; sourceTree = "<group>"; };
 		3B74B742216EA1B9004FD12B /* calibri.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = calibri.ttf; sourceTree = "<group>"; };
 		3B74B743216EA1B9004FD12B /* cortoba.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cortoba.ttf; sourceTree = "<group>"; };
-		3B74B744216EA1B9004FD12B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../test/test/Constants.swift; sourceTree = "<group>"; };
+		3B74B744216EA1B9004FD12B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3B74B74C216EA2A7004FD12B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		3B74B74D216EA2A7004FD12B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3B74B751216EA346004FD12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -102,6 +108,14 @@
 		3B74B756216EA70D004FD12B /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		3B74B757216EA70D004FD12B /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		3B74B75B216EA797004FD12B /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		3BDD3441217B341A003035CF /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		3BDD3443217B37E2003035CF /* L012Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L012Localizer.swift; sourceTree = "<group>"; };
+		3BDD3444217B37E2003035CF /* L102Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L102Language.swift; sourceTree = "<group>"; };
+		3BDD3448217B4594003035CF /* AllStoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStoresViewController.swift; sourceTree = "<group>"; };
+		3BDD3449217B4594003035CF /* AllStoresViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllStoresViewController.xib; sourceTree = "<group>"; };
+		3BDD3450217B48E9003035CF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3BDD3453217B4AE4003035CF /* GPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSViewController.swift; sourceTree = "<group>"; };
+		3BDD3454217B4AE4003035CF /* GPSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPSViewController.xib; sourceTree = "<group>"; };
 		78DFA8D25F36A48F1286D3C9 /* Pods-InstaShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop.debug.xcconfig"; sourceTree = "<group>"; };
 		AD8280C117EEE7BABF2F32BA /* Pods-InstaShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop.release.xcconfig"; sourceTree = "<group>"; };
 		F7C9CE6C4A84D17040A77FE6 /* Pods_InstaShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +145,8 @@
 		3B3EBC7821767F4100E100C1 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				3BDD3443217B37E2003035CF /* L012Localizer.swift */,
+				3BDD3444217B37E2003035CF /* L102Language.swift */,
 				3B3EBCA2217688A300E100C1 /* CustomViews */,
 				3B3EBC9F217688A300E100C1 /* Extensions */,
 				3B3EBC7921767F8000E100C1 /* CheckBox.swift */,
@@ -224,6 +240,8 @@
 		3B58D30F2168DCE7000041EE /* InstaShop */ = {
 			isa = PBXGroup;
 			children = (
+				3BDD3452217B4AC0003035CF /* GPS */,
+				3BDD3447217B4564003035CF /* Stores */,
 				3B3EBC7F2176806B00E100C1 /* MultipleCells */,
 				3B3EBC7821767F4100E100C1 /* Utilities */,
 				3B74B754216EA6D8004FD12B /* Component */,
@@ -239,6 +257,8 @@
 				3B58D31F2168DCE8000041EE /* Info.plist */,
 				3B58D3172168DCE7000041EE /* InstaShop.xcdatamodeld */,
 				3B74B750216EA346004FD12B /* Localizable.strings */,
+				3BDD3441217B341A003035CF /* Localizable.swift */,
+				3BDD3450217B48E9003035CF /* BaseViewController.swift */,
 			);
 			path = InstaShop;
 			sourceTree = "<group>";
@@ -246,11 +266,9 @@
 		3B74B73A216EA1B9004FD12B /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				3B3EBCAB21768F3600E100C1 /* MainBaseViewController.swift */,
 				3B74B73B216EA1B9004FD12B /* SignUp */,
 			);
-			name = Authentication;
-			path = ../../test/test/Authentication;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		3B74B73B216EA1B9004FD12B /* SignUp */ = {
@@ -268,8 +286,7 @@
 			children = (
 				3B74B73F216EA1B9004FD12B /* fonts */,
 			);
-			name = Ressources;
-			path = ../../test/test/Ressources;
+			path = Ressources;
 			sourceTree = "<group>";
 		};
 		3B74B73F216EA1B9004FD12B /* fonts */ = {
@@ -293,6 +310,24 @@
 				3B4FDC8F2178B76600E73BB7 /* CustomRadioButton.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		3BDD3447217B4564003035CF /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				3BDD3448217B4594003035CF /* AllStoresViewController.swift */,
+				3BDD3449217B4594003035CF /* AllStoresViewController.xib */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		3BDD3452217B4AC0003035CF /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				3BDD3453217B4AE4003035CF /* GPSViewController.swift */,
+				3BDD3454217B4AE4003035CF /* GPSViewController.xib */,
+			);
+			path = GPS;
 			sourceTree = "<group>";
 		};
 		72D81F363F081373B88A1E9B /* Frameworks */ = {
@@ -365,6 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDD344B217B4594003035CF /* AllStoresViewController.xib in Resources */,
 				3B3EBC962176806B00E100C1 /* DropdownCell.xib in Resources */,
 				3B74B749216EA1BA004FD12B /* calibri.ttf in Resources */,
 				3B3EBC9C2176806B00E100C1 /* ViewCell.xib in Resources */,
@@ -379,6 +415,7 @@
 				3B3EBC932176806B00E100C1 /* ButtonCell.xib in Resources */,
 				3B74B746216EA1BA004FD12B /* SignUpViewController.xib in Resources */,
 				3B58D3162168DCE7000041EE /* Main.storyboard in Resources */,
+				3BDD3456217B4AE4003035CF /* GPSViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,8 +473,11 @@
 			files = (
 				3B3EBC7C21767F8000E100C1 /* DateUtils.swift in Sources */,
 				3B3EBC922176806B00E100C1 /* ButtonCell.swift in Sources */,
+				3BDD3451217B48E9003035CF /* BaseViewController.swift in Sources */,
 				3B3EBC992176806B00E100C1 /* InputLongCell.swift in Sources */,
 				3B74B74B216EA1BA004FD12B /* Constants.swift in Sources */,
+				3BDD344A217B4594003035CF /* AllStoresViewController.swift in Sources */,
+				3BDD3445217B37E2003035CF /* L012Localizer.swift in Sources */,
 				3B74B758216EA70D004FD12B /* Button.swift in Sources */,
 				3B3EBCB021769E4500E100C1 /* AppDelegate+loader.swift in Sources */,
 				3B3EBC952176806B00E100C1 /* DropdownCell.swift in Sources */,
@@ -449,13 +489,15 @@
 				3B3EBCA9217688A300E100C1 /* LoaderApp.swift in Sources */,
 				3B74B75A216EA70D004FD12B /* TextField.swift in Sources */,
 				3B3EBC7B21767F8000E100C1 /* CheckBox.swift in Sources */,
+				3BDD3446217B37E2003035CF /* L102Language.swift in Sources */,
+				3BDD3455217B4AE4003035CF /* GPSViewController.swift in Sources */,
 				3B58D3192168DCE7000041EE /* InstaShop.xcdatamodeld in Sources */,
 				3B3EBCA6217688A300E100C1 /* ColorExtension.swift in Sources */,
 				3B3EBC972176806B00E100C1 /* InputCell.swift in Sources */,
 				3B3EBCAE21769AED00E100C1 /* SignUpService.swift in Sources */,
 				3B74B745216EA1BA004FD12B /* SignUpViewController.swift in Sources */,
 				3B74B75C216EA798004FD12B /* LanguageManager.swift in Sources */,
-				3B3EBCAC21768F3600E100C1 /* MainBaseViewController.swift in Sources */,
+				3BDD3442217B341A003035CF /* Localizable.swift in Sources */,
 				3B3EBC9D2176806B00E100C1 /* UITableView+Extensions.swift in Sources */,
 				3B3EBC942176806B00E100C1 /* CellType.swift in Sources */,
 				3B74B759216EA70D004FD12B /* Label.swift in Sources */,
