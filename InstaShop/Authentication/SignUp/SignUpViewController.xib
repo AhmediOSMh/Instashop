@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -46,7 +45,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO-white" translatesAutoresizingMaskIntoConstraints="NO" id="BZF-rL-Gcj">
-                                    <rect key="frame" x="113" y="28" width="150" height="73"/>
+                                    <rect key="frame" x="112.5" y="27.5" width="150" height="73"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="73" id="Lbf-bl-H1U"/>
                                         <constraint firstAttribute="width" constant="150" id="MEl-Jg-HZc"/>
@@ -64,14 +63,14 @@
                             <rect key="frame" x="0.0" y="128" width="375" height="50"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping cart_1" translatesAutoresizingMaskIntoConstraints="NO" id="Idp-ND-R4r">
-                                    <rect key="frame" x="211" y="15" width="20" height="20"/>
+                                    <rect key="frame" x="210.5" y="15" width="20" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="20" id="08o-dF-LLg"/>
                                         <constraint firstAttribute="height" constant="20" id="t9R-rH-TaD"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsX-CW-881" customClass="Label" customModule="InstaShop" customModuleProvider="target">
-                                    <rect key="frame" x="167" y="15" width="42" height="21"/>
+                                    <rect key="frame" x="166.5" y="14.5" width="42" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21" id="c2o-YG-mFS"/>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="kbc-ts-9sD"/>
@@ -84,7 +83,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </label>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping cart_1" translatesAutoresizingMaskIntoConstraints="NO" id="vWF-j5-z6j">
-                                    <rect key="frame" x="145" y="15" width="20" height="20"/>
+                                    <rect key="frame" x="144.5" y="15" width="20" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="20" id="OFg-xD-GuD"/>
                                         <constraint firstAttribute="height" constant="20" id="x29-gM-rmk"/>
@@ -151,7 +150,7 @@
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwp-mv-glr" customClass="RadioButton" customModule="InstaShop" customModuleProvider="target">
-                            <rect key="frame" x="132" y="499" width="20" height="20"/>
+                            <rect key="frame" x="132.5" y="499" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="20" id="ecH-b1-6kF"/>
                                 <constraint firstAttribute="height" constant="20" id="sna-Rd-g7o"/>
@@ -162,7 +161,7 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaS-eu-fjZ" customClass="Label" customModule="InstaShop" customModuleProvider="target">
-                            <rect key="frame" x="67" y="499" width="60" height="20"/>
+                            <rect key="frame" x="67.5" y="499" width="60" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="60" id="hUC-jq-h0m"/>
                                 <constraint firstAttribute="height" constant="20" id="s6A-Fl-aCH"/>
@@ -175,14 +174,14 @@
                             </userDefinedRuntimeAttributes>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHQ-uc-LzO" customClass="RadioButton" customModule="InstaShop" customModuleProvider="target">
-                            <rect key="frame" x="222" y="499" width="20" height="20"/>
+                            <rect key="frame" x="222.5" y="499" width="20" height="20"/>
                             <state key="normal" image="uncheckedBtn"/>
                             <connections>
                                 <action selector="WomanGenderAction:" destination="-1" eventType="touchUpInside" id="bVL-na-XJl"/>
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3Y-Ei-ahW" customClass="Label" customModule="InstaShop" customModuleProvider="target">
-                            <rect key="frame" x="182" y="499" width="35" height="20"/>
+                            <rect key="frame" x="183" y="499" width="34.5" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="lyo-uk-hsa"/>
                                 <constraint firstAttribute="width" constant="34.5" id="oM8-49-w0s"/>
@@ -195,7 +194,7 @@
                             </userDefinedRuntimeAttributes>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ou-W8-0Kz" customClass="Button" customModule="InstaShop" customModuleProvider="target">
-                            <rect key="frame" x="112" y="538" width="150" height="40"/>
+                            <rect key="frame" x="112.5" y="538" width="150" height="40"/>
                             <color key="backgroundColor" red="0.050980392159999999" green="0.43137254899999999" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="f38-z2-gxe"/>
@@ -219,7 +218,7 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vim-O0-gcx">
-                            <rect key="frame" x="112" y="586" width="150" height="33"/>
+                            <rect key="frame" x="112.5" y="586" width="150" height="33"/>
                             <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -261,6 +260,7 @@
                         <constraint firstItem="JzC-3v-WNz" firstAttribute="centerX" secondItem="um2-By-1zo" secondAttribute="centerX" id="9Ne-Q4-cv4"/>
                         <constraint firstItem="71N-mz-gJL" firstAttribute="centerX" secondItem="kbg-He-H3c" secondAttribute="centerX" id="9eE-2J-tGP"/>
                         <constraint firstItem="JtB-Fn-5Dl" firstAttribute="top" secondItem="2wb-ex-DMv" secondAttribute="top" id="AJl-4R-C2I"/>
+                        <constraint firstItem="2X2-2M-Ar9" firstAttribute="leading" secondItem="2wb-ex-DMv" secondAttribute="leading" constant="20" id="GyI-T2-lVF"/>
                         <constraint firstItem="um2-By-1zo" firstAttribute="top" secondItem="71N-mz-gJL" secondAttribute="bottom" constant="20" id="JJC-my-c2v"/>
                         <constraint firstItem="X3Y-Ei-ahW" firstAttribute="centerY" secondItem="NHQ-uc-LzO" secondAttribute="centerY" id="JdS-XH-avg"/>
                         <constraint firstItem="kbg-He-H3c" firstAttribute="top" secondItem="KBR-mT-W4R" secondAttribute="bottom" constant="51" id="K06-v9-zrP"/>
@@ -304,8 +304,8 @@
         </view>
     </objects>
     <resources>
-        <image name="LOGO-white" width="204" height="100"/>
-        <image name="shopping cart_1" width="24" height="23"/>
+        <image name="LOGO-white" width="204.5" height="100.5"/>
+        <image name="shopping cart_1" width="24.5" height="23.5"/>
         <image name="uncheckedBtn" width="50" height="50"/>
     </resources>
 </document>

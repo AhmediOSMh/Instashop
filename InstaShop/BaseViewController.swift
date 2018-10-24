@@ -81,6 +81,13 @@ extension BaseViewController: UIPopoverPresentationControllerDelegate {
         return emailTest.evaluate(with: testStr)
     }
     
+    func isValidPhoneNumber(testStr:String) -> Bool {
+        // print("validate calendar: \(testStr)")
+        let regEx = "^((\\+)|(00)|[0-9])[0-9]{6,14}$"
+        let tester = NSPredicate(format:"SELF MATCHES %@", regEx)
+        return tester.evaluate(with: testStr)
+    }
+    
     
     
 }

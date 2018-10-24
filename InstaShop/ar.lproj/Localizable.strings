@@ -21,4 +21,6 @@
 "OK_Key"                            = "حسنا";
 "concel_Key"                        = "الغاء";
 "OpenApp_Key"                       = "تخطى الى المتاجر القريبة";
-
+"ChangeToArabic_Key"                = "" ;
+"SignInButtonLabel_Key"             = "تسجيل الدخول" ;
+"loginPlaceholder"                  = "Email Or Mobile number" ;

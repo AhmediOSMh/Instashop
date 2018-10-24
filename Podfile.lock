@@ -2,16 +2,16 @@ PODS:
   - Alamofire (4.7.1)
   - DLRadioButton (1.4.11)
   - LGSideMenuController (2.1.1)
-  - ObjectMapper (3.1.0)
+  - ObjectMapper (3.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - DLRadioButton (~> 1.4)
   - LGSideMenuController
-  - ObjectMapper (~> 3.1)
+  - ObjectMapper (~> 3.3)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - DLRadioButton
     - LGSideMenuController
@@ -21,8 +21,8 @@ SPEC CHECKSUMS:
   Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
   DLRadioButton: 0d04b8259e7bfd886571a1e9173c73fee7118f50
   LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
-  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
 
-PODFILE CHECKSUM: 194aa036461e9279be83148fe4ceef355b3cfe01
+PODFILE CHECKSUM: 6ac018d0bc17e39eac533961ad64ad37db798331
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

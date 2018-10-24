@@ -58,6 +58,9 @@
 		3BDD3455217B4AE4003035CF /* GPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3453217B4AE4003035CF /* GPSViewController.swift */; };
 		3BDD3456217B4AE4003035CF /* GPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BDD3454217B4AE4003035CF /* GPSViewController.xib */; };
 		3DFBD236505E18CD6293B7D8 /* Pods_InstaShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C9CE6C4A84D17040A77FE6 /* Pods_InstaShop.framework */; };
+		C044D047217D14B700BA2400 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044D046217D14B700BA2400 /* SignInViewController.swift */; };
+		C044D049217D14F200BA2400 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044D048217D14F200BA2400 /* SignInService.swift */; };
+		C044D04B217D150700BA2400 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C044D04A217D150700BA2400 /* SignInViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +121,9 @@
 		3BDD3454217B4AE4003035CF /* GPSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPSViewController.xib; sourceTree = "<group>"; };
 		78DFA8D25F36A48F1286D3C9 /* Pods-InstaShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop.debug.xcconfig"; sourceTree = "<group>"; };
 		AD8280C117EEE7BABF2F32BA /* Pods-InstaShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop.release.xcconfig"; sourceTree = "<group>"; };
+		C044D046217D14B700BA2400 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C044D048217D14F200BA2400 /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
+		C044D04A217D150700BA2400 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		F7C9CE6C4A84D17040A77FE6 /* Pods_InstaShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -266,6 +272,7 @@
 		3B74B73A216EA1B9004FD12B /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				C044D045217D13D400BA2400 /* SignIn */,
 				3B74B73B216EA1B9004FD12B /* SignUp */,
 			);
 			path = Authentication;
@@ -338,6 +345,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C044D045217D13D400BA2400 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				C044D046217D14B700BA2400 /* SignInViewController.swift */,
+				C044D048217D14F200BA2400 /* SignInService.swift */,
+				C044D04A217D150700BA2400 /* SignInViewController.xib */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -406,6 +423,7 @@
 				3B3EBC9C2176806B00E100C1 /* ViewCell.xib in Resources */,
 				3B3EBC982176806B00E100C1 /* InputCell.xib in Resources */,
 				3B74B74A216EA1BA004FD12B /* cortoba.ttf in Resources */,
+				C044D04B217D150700BA2400 /* SignInViewController.xib in Resources */,
 				3B74B748216EA1BA004FD12B /* bein_ar_normal.ttf in Resources */,
 				3B58D31E2168DCE8000041EE /* LaunchScreen.storyboard in Resources */,
 				3B74B752216EA346004FD12B /* Localizable.strings in Resources */,
@@ -498,7 +516,9 @@
 				3B74B745216EA1BA004FD12B /* SignUpViewController.swift in Sources */,
 				3B74B75C216EA798004FD12B /* LanguageManager.swift in Sources */,
 				3BDD3442217B341A003035CF /* Localizable.swift in Sources */,
+				C044D049217D14F200BA2400 /* SignInService.swift in Sources */,
 				3B3EBC9D2176806B00E100C1 /* UITableView+Extensions.swift in Sources */,
+				C044D047217D14B700BA2400 /* SignInViewController.swift in Sources */,
 				3B3EBC942176806B00E100C1 /* CellType.swift in Sources */,
 				3B74B759216EA70D004FD12B /* Label.swift in Sources */,
 				3B3EBC9E2176806B00E100C1 /* UITableViewCell+Extensions.swift in Sources */,
@@ -656,7 +676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YM8CFU85ZD;
+				DEVELOPMENT_TEAM = K685D8R3WX;
 				INFOPLIST_FILE = InstaShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -673,7 +693,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YM8CFU85ZD;
+				DEVELOPMENT_TEAM = K685D8R3WX;
 				INFOPLIST_FILE = InstaShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

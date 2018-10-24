@@ -1,35 +1,27 @@
 //
-//  SignUpViewController.swift
+//  SignInViewController.swift
 //  InstaShop
 //
-//  Created by Ahmed Mh on 10/10/2018.
+//  Created by mouadh allani on 10/21/18.
 //  Copyright © 2018 Ahmed Mh. All rights reserved.
 //
 
 import UIKit
 
-class SignUpViewController: BaseViewController , UITextFieldDelegate{
-    @IBOutlet weak var name: TextField!
+class SignInViewController: BaseViewController , UITextFieldDelegate{
     @IBOutlet weak var email: TextField!
-    @IBOutlet weak var tel: TextField!
     @IBOutlet weak var password: TextField!
-    @IBOutlet weak var manGenderBtn: RadioButton!
-    @IBOutlet weak var womanGenderBtn: RadioButton!
     @IBOutlet weak var LoginLabel: UILabel!
-    @IBOutlet weak var signUpBtn: UIButton!
+    @IBOutlet weak var signInBtn: UIButton!
     @IBOutlet weak var iconCardLeft: UIImageView!
     @IBOutlet weak var iconCardRight: UIImageView!
     @IBOutlet weak var ChangeLangBtn: Button!
+    @IBOutlet weak var facebookBtn: Button!
+    @IBOutlet weak var googlePlusBtn: Button!
     var params: [String: Any] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        womanGenderBtn.isSelected = false
-        manGenderBtn.isSelected = false
-//        womanGenderBtn?.alternateButton = [manGenderBtn!]
-//        manGenderBtn?.alternateButton = [womanGenderBtn! as! RadioButton]
-        manGenderBtn.setImage(UIImage(named: "unchekedBtn"), for: .normal)
-        womanGenderBtn.setImage(UIImage(named: "unchekedBtn"), for: .normal)
         if(LanguageManger.shared.isRightToLeft == true)
         {
             iconCardLeft.isHidden = false
@@ -42,19 +34,9 @@ class SignUpViewController: BaseViewController , UITextFieldDelegate{
             ChangeLangBtn.setTitle("غير الى الانقليزية",for: .normal)
             
         }
-        // Validationtext field
-        
-//        name.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
-//
-//
-//        email.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
-//        tel.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
-//        password.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
-        
+
         self.AddToolBar()
-        name.delegate = self
         email.delegate = self
-        tel.delegate = self
         password.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
@@ -75,8 +57,6 @@ class SignUpViewController: BaseViewController , UITextFieldDelegate{
         
         toolbar.setItems([flexSpace, doneBtn], animated: false)
         toolbar.sizeToFit()
-        tel.inputAccessoryView = toolbar
-        name.inputAccessoryView = toolbar
         email.inputAccessoryView = toolbar
         password.inputAccessoryView = toolbar
     }
@@ -85,23 +65,12 @@ class SignUpViewController: BaseViewController , UITextFieldDelegate{
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
         textField.resignFirstResponder()
-        //or
-        //self.view.endEditing(true)
         return true
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
-//        if (name.text?.isEmpty)! || (email.text?.isEmpty)! || (tel.text?.isEmpty)! || (password.text?.isEmpty)! {
-//            IsValid = false
-//            self.params.updateValue(name.text ?? "", forKey: "name")
-//            self.params.updateValue(email.text ?? "", forKey: "email")
-//            self.params.updateValue(tel.text ?? "", forKey: "phone")
-//            self.params.updateValue("man", forKey: "gender")
-//        } else {
-//            IsValid = true
-//        }
+
     }
     
     
@@ -114,19 +83,11 @@ class SignUpViewController: BaseViewController , UITextFieldDelegate{
         // Hide the navigation bar on the this view controller
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-    
-    @IBAction func ManGenderAction(_ sender: Any) {
-        manGenderBtn.setImage(UIImage(named: "chekedBtn"), for: .normal)
-        womanGenderBtn.setImage(UIImage(named: "unchekedBtn"), for: .normal)
-    }
-    @IBAction func WomanGenderAction(_ sender: Any) {
-        womanGenderBtn.setImage(UIImage(named: "chekedBtn"), for: .normal)
-        manGenderBtn.setImage(UIImage(named: "unchekedBtn"), for: .normal)
-    }
-    @IBAction func signUp(_ sender: Any) {
+
+    @IBAction func signIn(_ sender: Any) {
         if(checkForm()){
             AppDelegate.showLoader()
-            SignUpService().execute(params: params) { (result) in
+            SignInService().authentication(params: params) { (result) in
                 DispatchQueue.main.async {
                     AppDelegate.hideLoader()
                     if let result = result, result {
@@ -163,21 +124,16 @@ class SignUpViewController: BaseViewController , UITextFieldDelegate{
     }
     
     func checkForm()-> Bool {
-        if (name.text?.isEmpty)! || (email.text?.isEmpty)! || (tel.text?.isEmpty)! || (password.text?.isEmpty)! || (!manGenderBtn.isSelected && !womanGenderBtn.isSelected) {
+        if ((email.text?.isEmpty)! || (password.text?.isEmpty)! ) {
             self.alert(message: NSLocalizedString("Validation_Alert", comment: ""))
             return false
         }
-        else if (!isValidEmail(testStr: email.text! )){
-            self.alert(message:NSLocalizedString("EmailNotValidMsg_key", comment: "") )
+        else if (!isValidEmail(testStr: email.text! ) && !isValidPhoneNumber(testStr: email.text! )){
+            self.alert(message:NSLocalizedString("EmailOrPhoneNotValidMsg_key", comment: "") )
             return false
         }
-        
-        self.params.updateValue(name.text ?? "", forKey: "name")
-        self.params.updateValue(email.text ?? "", forKey: "email")
-        self.params.updateValue(tel.text ?? "", forKey: "phone")
+        self.params.updateValue(email.text ?? "", forKey: "phone")
         self.params.updateValue(password.text ?? "", forKey: "password")
-        self.params.updateValue( (manGenderBtn.isSelected) ? 1 : 0, forKey: "id_gender")
-        
         return true;
     }
 }
