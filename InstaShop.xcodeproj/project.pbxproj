@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B17E6002185E36300A145AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17E5FF2185E36300A145AA /* User.swift */; };
 		3B3EBC7B21767F8000E100C1 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC7921767F8000E100C1 /* CheckBox.swift */; };
 		3B3EBC7C21767F8000E100C1 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC7A21767F8000E100C1 /* DateUtils.swift */; };
 		3B3EBC912176806B00E100C1 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC812176806B00E100C1 /* BaseCell.swift */; };
@@ -64,6 +65,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B17E5FF2185E36300A145AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3B3EBC7921767F8000E100C1 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		3B3EBC7A21767F8000E100C1 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		3B3EBC812176806B00E100C1 /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
@@ -146,6 +148,14 @@
 				AD8280C117EEE7BABF2F32BA /* Pods-InstaShop.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3B17E5FE2185E34600A145AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B17E5FF2185E36300A145AA /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		3B3EBC7821767F4100E100C1 /* Utilities */ = {
@@ -246,6 +256,7 @@
 		3B58D30F2168DCE7000041EE /* InstaShop */ = {
 			isa = PBXGroup;
 			children = (
+				3B17E5FE2185E34600A145AA /* Models */,
 				3BDD3452217B4AC0003035CF /* GPS */,
 				3BDD3447217B4564003035CF /* Stores */,
 				3B3EBC7F2176806B00E100C1 /* MultipleCells */,
@@ -512,6 +523,7 @@
 				3B58D3192168DCE7000041EE /* InstaShop.xcdatamodeld in Sources */,
 				3B3EBCA6217688A300E100C1 /* ColorExtension.swift in Sources */,
 				3B3EBC972176806B00E100C1 /* InputCell.swift in Sources */,
+				3B17E6002185E36300A145AA /* User.swift in Sources */,
 				3B3EBCAE21769AED00E100C1 /* SignUpService.swift in Sources */,
 				3B74B745216EA1BA004FD12B /* SignUpViewController.swift in Sources */,
 				3B74B75C216EA798004FD12B /* LanguageManager.swift in Sources */,
