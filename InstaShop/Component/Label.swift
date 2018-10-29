@@ -26,4 +26,10 @@ class Label : UILabel
         self.text = string
         
     }
+    
+    func setStyle ()  {
+        let  string=NSLocalizedString(self.key, comment: "")
+        self.text = string
+        
+    }
 }

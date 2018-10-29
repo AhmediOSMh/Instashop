@@ -15,7 +15,7 @@ class SignInService: NSObject {
     func authentication(params: [String: Any], completion : @escaping (Bool?) -> Void) {
         let url = AuthenticationURL
         
-        Alamofire.request(url, method: .post, parameters: params, headers : nil).responseJSON { (data) in
+        Alamofire.request(url, method: .get, parameters: params, headers : nil).responseJSON { (data) in
             
             switch data.result {
                 
@@ -23,7 +23,6 @@ class SignInService: NSObject {
                 debugPrint("data ===>", data)
                 let result: Bool? = self.handleMappingResponse(data: data)
                 completion(result)
-                
             case .failure(let error):
                 debugPrint("error ===>", error)
                 completion(nil)
@@ -34,11 +33,14 @@ class SignInService: NSObject {
     func handleMappingResponse(data : Any) -> Bool? {
         
         if let json = data as? [String : Any] {
-            print(json)
-            if let result = json["result"]  as? String {
-                if(result == "success"){
+            if let result = json["Exist"]  as? Int {
+                if(result == 1){
                     return true
-                }}
+                }else{
+                    return false
+                }
+                
+            }
         }
         
         return nil

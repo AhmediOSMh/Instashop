@@ -22,6 +22,9 @@ class SignInViewController: BaseViewController , UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Fonts.setboldStyle(label: signInBtn.titleLabel!);
+        
         if(LanguageManger.shared.isRightToLeft == true)
         {
             iconCardLeft.isHidden = false
@@ -91,9 +94,9 @@ class SignInViewController: BaseViewController , UITextFieldDelegate{
                 DispatchQueue.main.async {
                     AppDelegate.hideLoader()
                     if let result = result, result {
-                        self.alert(message: "Formulaire envoyé avec succès")
+                        self.alert(message: "Succes authentication")
                     } else {
-                        self.alert(message: "Problème de connexion")
+                        self.alert(message: "Fail Authentication")
                     }
                 }
             }

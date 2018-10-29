@@ -62,6 +62,7 @@
 		C044D047217D14B700BA2400 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044D046217D14B700BA2400 /* SignInViewController.swift */; };
 		C044D049217D14F200BA2400 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044D048217D14F200BA2400 /* SignInService.swift */; };
 		C044D04B217D150700BA2400 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C044D04A217D150700BA2400 /* SignInViewController.xib */; };
+		C0AFFE5A2185EC1E00EF908D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AFFE592185EC1E00EF908D /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,7 @@
 		C044D046217D14B700BA2400 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C044D048217D14F200BA2400 /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 		C044D04A217D150700BA2400 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		C0AFFE592185EC1E00EF908D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		F7C9CE6C4A84D17040A77FE6 /* Pods_InstaShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -167,6 +169,7 @@
 				3B3EBC9F217688A300E100C1 /* Extensions */,
 				3B3EBC7921767F8000E100C1 /* CheckBox.swift */,
 				3B3EBC7A21767F8000E100C1 /* DateUtils.swift */,
+				C0AFFE592185EC1E00EF908D /* Fonts.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 				3B3EBC9E2176806B00E100C1 /* UITableViewCell+Extensions.swift in Sources */,
 				3B58D3112168DCE7000041EE /* AppDelegate.swift in Sources */,
 				3B3EBCAA217688A300E100C1 /* LoaderContainer.swift in Sources */,
+				C0AFFE5A2185EC1E00EF908D /* Fonts.swift in Sources */,
 				3B3EBCA8217688A300E100C1 /* CustomPaddingTF.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

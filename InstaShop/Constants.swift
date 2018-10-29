@@ -8,7 +8,7 @@
 
 import Foundation
 
-let BaseURL = "https://aliabderrahim1981.000webhostapp.com/api_app_market/"
-let signUpURL = BaseURL + "register_costumer.php"
-let AuthenticationURL = BaseURL + "check_costumer_exists.php"
+let BaseURL = "http://insta.arabepro.net/API/"
+let signUpURL = BaseURL + "user/new"
+let AuthenticationURL = BaseURL + "user/login"
 
