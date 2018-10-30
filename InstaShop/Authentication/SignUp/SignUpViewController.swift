@@ -129,11 +129,7 @@ class SignUpViewController: BaseViewController , UITextFieldDelegate{
             SignUpService().execute(params: params) { (result) in
                 DispatchQueue.main.async {
                     AppDelegate.hideLoader()
-                    if let result = result, result {
-                        self.alert(message: "Formulaire envoyé avec succès")
-                    } else {
-                        self.alert(message: "Problème de connexion")
-                    }
+                    self.alert(message: result!)
                 }
             }
         }
@@ -172,11 +168,11 @@ class SignUpViewController: BaseViewController , UITextFieldDelegate{
             return false
         }
         
-        self.params.updateValue(name.text ?? "", forKey: "name")
+        self.params.updateValue(name.text ?? "", forKey: "username")
         self.params.updateValue(email.text ?? "", forKey: "email")
         self.params.updateValue(tel.text ?? "", forKey: "phone")
         self.params.updateValue(password.text ?? "", forKey: "password")
-        self.params.updateValue( (manGenderBtn.isSelected) ? 1 : 0, forKey: "id_gender")
+        self.params.updateValue( (manGenderBtn.isSelected) ? "M" : "F", forKey: "gender")
         
         return true;
     }

@@ -24,7 +24,6 @@ class User : NSObject, NSCoding, Mappable{
     var userName : String?
     var gender : String?
     var exist : Int?
-    var user : User?
     
     
     class func newInstance(map: Map) -> Mappable?{
@@ -45,7 +44,6 @@ class User : NSObject, NSCoding, Mappable{
         userName <- map["UserName"]
         gender <- map["gender"]
         exist <- map["Exist"]
-        user <- map["User"]
         
     }
     
@@ -65,7 +63,6 @@ class User : NSObject, NSCoding, Mappable{
         userName = aDecoder.decodeObject(forKey: "UserName") as? String
         gender = aDecoder.decodeObject(forKey: "gender") as? String
         exist = aDecoder.decodeObject(forKey: "Exist") as? Int
-        user = aDecoder.decodeObject(forKey: "User") as? User
         
     }
     
@@ -104,9 +101,6 @@ class User : NSObject, NSCoding, Mappable{
         }
         if exist != nil{
             aCoder.encode(exist, forKey: "Exist")
-        }
-        if user != nil{
-            aCoder.encode(user, forKey: "User")
         }
         
     }

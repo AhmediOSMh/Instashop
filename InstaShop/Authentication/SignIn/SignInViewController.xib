@@ -20,14 +20,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController" customModule="InstaShop" customModuleProvider="target">
             <connections>
-                <outlet property="ChangeLangBtn" destination="c0h-tH-5sY" id="efc-xX-pfl"/>
-                <outlet property="email" destination="fb5-TS-lDR" id="8vK-ul-1VD"/>
-                <outlet property="facebookBtn" destination="BZF-Q8-djl" id="7L2-ip-W1e"/>
-                <outlet property="googlePlusBtn" destination="iSl-iV-Gdq" id="47X-aw-ryQ"/>
-                <outlet property="iconCardLeft" destination="NGr-qa-svu" id="DYu-4l-dZE"/>
-                <outlet property="iconCardRight" destination="CaN-96-fT8" id="25v-30-dxe"/>
-                <outlet property="password" destination="5ep-vO-mXG" id="TZD-9R-mlB"/>
-                <outlet property="signInBtn" destination="uYh-XT-K2A" id="FgL-SH-Q0P"/>
+                <outlet property="ChangeLangBtn" destination="MT0-Fg-lyb" id="4lu-1Z-fya"/>
+                <outlet property="email" destination="uIm-ba-cJJ" id="Pjg-st-Urc"/>
+                <outlet property="iconCardLeft" destination="OL9-p1-bcf" id="SUF-Jj-TuJ"/>
+                <outlet property="iconCardRight" destination="FZ5-iw-8mr" id="FiV-uQ-dfA"/>
+                <outlet property="password" destination="DtI-dI-H2g" id="8hq-Ax-81U"/>
+                <outlet property="signInBtn" destination="bwi-qx-HOT" id="0CH-ZU-cN1"/>
                 <outlet property="view" destination="iN0-l3-epB" id="4bZ-Fm-RZJ"/>
             </connections>
         </placeholder>
@@ -39,31 +37,40 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rhp-VJ-F08">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hw5-tV-5me">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cl9-Je-t9s">
+                            <rect key="frame" x="0.0" y="4" width="375" height="128"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LOGO-white" translatesAutoresizingMaskIntoConstraints="NO" id="Ywv-wd-q2c">
-                                    <rect key="frame" x="113" y="28" width="150" height="72"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO-white" translatesAutoresizingMaskIntoConstraints="NO" id="hpG-3I-5hB">
+                                    <rect key="frame" x="112.5" y="27.5" width="150" height="73"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="alV-n3-7Et"/>
+                                        <constraint firstAttribute="height" constant="73" id="exu-na-NAz"/>
+                                    </constraints>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" red="0.050980392159999999" green="0.43137254899999999" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="128" id="oOv-Q7-swW"/>
+                                <constraint firstAttribute="height" constant="128" id="2BQ-TZ-Ssm"/>
+                                <constraint firstItem="hpG-3I-5hB" firstAttribute="centerY" secondItem="cl9-Je-t9s" secondAttribute="centerY" id="Eea-tQ-wiw"/>
+                                <constraint firstItem="hpG-3I-5hB" firstAttribute="centerX" secondItem="cl9-Je-t9s" secondAttribute="centerX" id="dRo-MQ-zU4"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ral-bs-OKp">
-                            <rect key="frame" x="0.0" y="128" width="375" height="50"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVA-Wm-j3S">
+                            <rect key="frame" x="0.0" y="132" width="375" height="50"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping cart_1" translatesAutoresizingMaskIntoConstraints="NO" id="CaN-96-fT8">
-                                    <rect key="frame" x="211" y="12" width="20" height="23"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping cart_1" translatesAutoresizingMaskIntoConstraints="NO" id="FZ5-iw-8mr">
+                                    <rect key="frame" x="210.5" y="15" width="20" height="20"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="23" id="eZi-jg-fGE"/>
-                                        <constraint firstAttribute="width" constant="20" id="ogz-Wi-9V4"/>
+                                        <constraint firstAttribute="height" constant="20" id="L8o-sg-ao5"/>
+                                        <constraint firstAttribute="width" constant="20" id="bz8-br-Zub"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZv-fM-rLT" customClass="Label" customModule="InstaShop" customModuleProvider="target">
-                                    <rect key="frame" x="187.5" y="12" width="0.0" height="0.0"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKK-QV-WRy" customClass="Label" customModule="InstaShop" customModuleProvider="target">
+                                    <rect key="frame" x="166.5" y="14.5" width="42" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="f4K-In-8c3"/>
+                                        <constraint firstAttribute="height" constant="21" id="hQ1-Yw-GoZ"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" name="beINBlack" family="beIN Black " pointSize="15"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
@@ -71,54 +78,75 @@
                                         <userDefinedRuntimeAttribute type="string" keyPath="key" value="BuyFromNear_Lbl"/>
                                     </userDefinedRuntimeAttributes>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping cart_1" translatesAutoresizingMaskIntoConstraints="NO" id="NGr-qa-svu">
-                                    <rect key="frame" x="144" y="15" width="20" height="20"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping cart_1" translatesAutoresizingMaskIntoConstraints="NO" id="OL9-p1-bcf">
+                                    <rect key="frame" x="144.5" y="15" width="20" height="20"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="20" id="HjC-Lr-mYZ"/>
-                                        <constraint firstAttribute="width" constant="20" id="zmD-8e-xnN"/>
+                                        <constraint firstAttribute="height" constant="20" id="cQ5-eJ-cEL"/>
+                                        <constraint firstAttribute="width" constant="20" id="jLv-3B-ls4"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" red="0.1843137255" green="0.50980392159999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstItem="RZv-fM-rLT" firstAttribute="top" secondItem="CaN-96-fT8" secondAttribute="top" id="0VD-Iv-M1Y"/>
-                                <constraint firstItem="RZv-fM-rLT" firstAttribute="top" secondItem="Ral-bs-OKp" secondAttribute="top" constant="12" id="65Y-Rr-bIZ"/>
-                                <constraint firstItem="RZv-fM-rLT" firstAttribute="centerX" secondItem="Ral-bs-OKp" secondAttribute="centerX" id="HqW-O9-rNL"/>
-                                <constraint firstItem="NGr-qa-svu" firstAttribute="bottom" secondItem="CaN-96-fT8" secondAttribute="bottom" id="Ogz-hA-HWm"/>
-                                <constraint firstItem="RZv-fM-rLT" firstAttribute="leading" secondItem="NGr-qa-svu" secondAttribute="trailing" constant="23.5" id="TeW-1m-PIm"/>
-                                <constraint firstItem="CaN-96-fT8" firstAttribute="leading" secondItem="RZv-fM-rLT" secondAttribute="trailing" constant="23.5" id="lM6-Me-UP0"/>
-                                <constraint firstAttribute="height" constant="50" id="vgl-Gf-Ne0"/>
+                                <constraint firstItem="dKK-QV-WRy" firstAttribute="centerX" secondItem="fVA-Wm-j3S" secondAttribute="centerX" id="6dz-CU-gnl"/>
+                                <constraint firstItem="dKK-QV-WRy" firstAttribute="centerY" secondItem="fVA-Wm-j3S" secondAttribute="centerY" id="91R-g5-g4k"/>
+                                <constraint firstItem="FZ5-iw-8mr" firstAttribute="leading" secondItem="dKK-QV-WRy" secondAttribute="trailing" constant="2" id="Pe5-3Y-gZE"/>
+                                <constraint firstItem="FZ5-iw-8mr" firstAttribute="centerY" secondItem="fVA-Wm-j3S" secondAttribute="centerY" id="e8H-rn-dwj"/>
+                                <constraint firstItem="OL9-p1-bcf" firstAttribute="centerY" secondItem="dKK-QV-WRy" secondAttribute="centerY" id="gwg-pz-4ug"/>
+                                <constraint firstAttribute="height" constant="50" id="k4J-g5-sjj"/>
+                                <constraint firstItem="dKK-QV-WRy" firstAttribute="leading" secondItem="OL9-p1-bcf" secondAttribute="trailing" constant="2" id="of0-92-TrN"/>
                             </constraints>
                         </view>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fb5-TS-lDR" customClass="TextField" customModule="InstaShop" customModuleProvider="target">
-                            <rect key="frame" x="15" y="198" width="345" height="50"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uIm-ba-cJJ" customClass="TextField" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="15" y="233" width="345" height="50"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="50" id="N57-p6-ABL"/>
+                                <constraint firstAttribute="height" constant="50" id="hkg-fJ-XIC"/>
                             </constraints>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad" textContentType="tel"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="string" keyPath="key" value="loginPlaceholder"/>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ep-vO-mXG" customClass="TextField" customModule="InstaShop" customModuleProvider="target">
-                            <rect key="frame" x="15" y="268" width="345" height="50"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DtI-dI-H2g" customClass="TextField" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="15" y="303" width="345" height="50"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="50" id="WPx-8A-5ej"/>
+                                <constraint firstAttribute="height" constant="50" id="HZs-uJ-ZxP"/>
                             </constraints>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="password"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="string" keyPath="key" value="password_key"/>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYh-XT-K2A" customClass="Button" customModule="InstaShop" customModuleProvider="target">
-                            <rect key="frame" x="112.5" y="367" width="150" height="40"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYY-sU-FbO">
+                            <rect key="frame" x="112.5" y="590" width="150" height="33"/>
+                            <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MT0-Fg-lyb" customClass="Button" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="20" y="633" width="150" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="YQf-zR-oam"/>
+                                <constraint firstAttribute="width" constant="150" id="gHZ-4T-FE0"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="key" value="OpenApp_Key"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YND-id-cdD" customClass="Button" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="205" y="633" width="150" height="30"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwi-qx-HOT" customClass="Button" customModule="InstaShop" customModuleProvider="target">
+                            <rect key="frame" x="112.5" y="451" width="150" height="40"/>
                             <color key="backgroundColor" red="0.050980392159999999" green="0.43137254899999999" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="150" id="KNN-OU-5Kr"/>
+                                <constraint firstAttribute="height" constant="40" id="4X2-sg-hpa"/>
+                                <constraint firstAttribute="width" constant="150" id="pZe-Qi-tnL"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
                             <state key="normal">
@@ -134,104 +162,36 @@
                                 <userDefinedRuntimeAttribute type="string" keyPath="key" value="SignInButtonLabel_Key"/>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="signIn:" destination="-1" eventType="touchUpInside" id="P59-va-SWI"/>
+                                <action selector="signIn:" destination="-1" eventType="touchUpInside" id="yr2-eb-uFE"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSl-iV-Gdq" customClass="Button" customModule="InstaShop" customModuleProvider="target">
-                            <rect key="frame" x="70" y="561" width="76" height="23"/>
-                            <color key="backgroundColor" red="0.050980392159999999" green="0.43137254899999999" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="76" id="9EQ-UU-oeI"/>
-                            </constraints>
-                            <state key="normal" image="google">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                    <real key="value" value="0.0"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                    <real key="value" value="10"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="string" keyPath="key" value="SignInButtonLabel_Key"/>
-                            </userDefinedRuntimeAttributes>
-                        </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjA-7u-HLu" customClass="Label" customModule="InstaShop" customModuleProvider="target">
-                            <rect key="frame" x="112.5" y="415" width="150" height="33"/>
-                            <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nx1-lz-pLG" customClass="Button" customModule="InstaShop" customModuleProvider="target">
-                            <rect key="frame" x="15" y="617" width="150" height="30"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="150" id="uWn-zg-vKl"/>
-                            </constraints>
-                            <state key="normal" title="Button"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="key" value="OpenApp_Key"/>
-                            </userDefinedRuntimeAttributes>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0h-tH-5sY" customClass="Button" customModule="InstaShop" customModuleProvider="target">
-                            <rect key="frame" x="210" y="617" width="150" height="30"/>
-                        </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsdfsd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ame-qz-h2v" customClass="Label" customModule="InstaShop" customModuleProvider="target">
-                            <rect key="frame" x="112.5" y="508" width="150" height="33"/>
-                            <fontDescription key="fontDescription" name="beINNormal" family="beIN Normal " pointSize="14"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZF-Q8-djl" customClass="Button" customModule="InstaShop" customModuleProvider="target">
-                            <rect key="frame" x="199" y="553" width="129" height="39"/>
-                            <state key="normal" image="facebook">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-white" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbL-lC-G3b">
-                            <rect key="frame" x="234" y="379" width="19" height="16"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="16" id="QHZ-dg-blx"/>
-                                <constraint firstAttribute="width" constant="19" id="VJp-uH-yGh"/>
-                            </constraints>
-                        </imageView>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="BZF-Q8-djl" firstAttribute="top" secondItem="Ame-qz-h2v" secondAttribute="bottom" constant="12" id="0EO-w6-Hdu"/>
-                        <constraint firstItem="iSl-iV-Gdq" firstAttribute="centerY" secondItem="BZF-Q8-djl" secondAttribute="centerY" id="0vE-Ot-HOK"/>
-                        <constraint firstItem="5ep-vO-mXG" firstAttribute="top" secondItem="fb5-TS-lDR" secondAttribute="bottom" constant="20" id="3EC-RA-0N6"/>
-                        <constraint firstAttribute="trailing" secondItem="hw5-tV-5me" secondAttribute="trailing" id="8yf-fq-zUj"/>
-                        <constraint firstItem="rbL-lC-G3b" firstAttribute="leading" secondItem="Rhp-VJ-F08" secondAttribute="leading" constant="234" id="9ve-xl-ho8"/>
-                        <constraint firstItem="MjA-7u-HLu" firstAttribute="trailing" secondItem="Ame-qz-h2v" secondAttribute="trailing" id="BdK-Ps-kcO"/>
-                        <constraint firstItem="MjA-7u-HLu" firstAttribute="top" secondItem="uYh-XT-K2A" secondAttribute="bottom" constant="8" symbolic="YES" id="GaR-AP-iGn"/>
-                        <constraint firstItem="c0h-tH-5sY" firstAttribute="leading" secondItem="nx1-lz-pLG" secondAttribute="trailing" constant="45" id="IZP-DL-f2d"/>
-                        <constraint firstAttribute="bottom" secondItem="nx1-lz-pLG" secondAttribute="bottom" constant="20" id="L5l-Ec-vaI"/>
-                        <constraint firstItem="Ame-qz-h2v" firstAttribute="top" secondItem="MjA-7u-HLu" secondAttribute="bottom" constant="60" id="NYj-Hd-Myf"/>
-                        <constraint firstItem="c0h-tH-5sY" firstAttribute="top" secondItem="BZF-Q8-djl" secondAttribute="bottom" constant="25" id="QMY-2N-O5r"/>
-                        <constraint firstItem="5ep-vO-mXG" firstAttribute="centerX" secondItem="uYh-XT-K2A" secondAttribute="centerX" id="Rt9-aj-GE3"/>
-                        <constraint firstItem="fb5-TS-lDR" firstAttribute="top" secondItem="Ral-bs-OKp" secondAttribute="bottom" constant="20" id="VSh-rS-l5n"/>
-                        <constraint firstItem="5ep-vO-mXG" firstAttribute="trailing" secondItem="c0h-tH-5sY" secondAttribute="trailing" id="Vju-kI-60e"/>
-                        <constraint firstItem="hw5-tV-5me" firstAttribute="leading" secondItem="Rhp-VJ-F08" secondAttribute="leading" id="W0f-hf-UZl"/>
-                        <constraint firstItem="fb5-TS-lDR" firstAttribute="trailing" secondItem="5ep-vO-mXG" secondAttribute="trailing" id="cIe-sr-hIe"/>
-                        <constraint firstItem="hw5-tV-5me" firstAttribute="trailing" secondItem="Ral-bs-OKp" secondAttribute="trailing" id="cIf-38-oto"/>
-                        <constraint firstItem="uYh-XT-K2A" firstAttribute="trailing" secondItem="MjA-7u-HLu" secondAttribute="trailing" id="dbf-Q7-u3A"/>
-                        <constraint firstAttribute="trailing" secondItem="BZF-Q8-djl" secondAttribute="trailing" constant="47" id="dgW-yj-WQ0"/>
-                        <constraint firstItem="hw5-tV-5me" firstAttribute="centerX" secondItem="Rhp-VJ-F08" secondAttribute="centerX" id="fOT-GG-lOc"/>
-                        <constraint firstItem="hw5-tV-5me" firstAttribute="top" secondItem="Rhp-VJ-F08" secondAttribute="top" id="fQD-7v-fpL"/>
-                        <constraint firstItem="Ral-bs-OKp" firstAttribute="top" secondItem="hw5-tV-5me" secondAttribute="bottom" id="i4v-Ae-RnC"/>
-                        <constraint firstItem="uYh-XT-K2A" firstAttribute="centerY" secondItem="rbL-lC-G3b" secondAttribute="centerY" id="ir9-pv-dtz"/>
-                        <constraint firstItem="MjA-7u-HLu" firstAttribute="leading" secondItem="Ame-qz-h2v" secondAttribute="leading" id="mVZ-c0-L1V"/>
-                        <constraint firstItem="fb5-TS-lDR" firstAttribute="leading" secondItem="5ep-vO-mXG" secondAttribute="leading" id="p99-4w-2Jn"/>
-                        <constraint firstItem="uYh-XT-K2A" firstAttribute="top" secondItem="5ep-vO-mXG" secondAttribute="bottom" constant="49" id="pY6-O9-obj"/>
-                        <constraint firstItem="BZF-Q8-djl" firstAttribute="leading" secondItem="iSl-iV-Gdq" secondAttribute="trailing" constant="53" id="qbk-2B-2hh"/>
-                        <constraint firstItem="5ep-vO-mXG" firstAttribute="leading" secondItem="nx1-lz-pLG" secondAttribute="leading" id="rDU-lg-g1q"/>
-                        <constraint firstItem="iSl-iV-Gdq" firstAttribute="top" secondItem="Ame-qz-h2v" secondAttribute="bottom" constant="20" id="tHS-6f-Vri"/>
-                        <constraint firstItem="uYh-XT-K2A" firstAttribute="leading" secondItem="MjA-7u-HLu" secondAttribute="leading" id="wE1-DO-gCf"/>
-                        <constraint firstItem="MjA-7u-HLu" firstAttribute="top" secondItem="rbL-lC-G3b" secondAttribute="bottom" constant="20" id="wGV-R1-O4I"/>
-                        <constraint firstItem="iSl-iV-Gdq" firstAttribute="leading" secondItem="Rhp-VJ-F08" secondAttribute="leading" constant="70" id="wNe-Ld-z0Y"/>
-                        <constraint firstItem="nx1-lz-pLG" firstAttribute="top" secondItem="c0h-tH-5sY" secondAttribute="top" id="xe0-WP-3HG"/>
-                        <constraint firstItem="hw5-tV-5me" firstAttribute="leading" secondItem="Ral-bs-OKp" secondAttribute="leading" id="yxV-Dv-Mfq"/>
-                        <constraint firstItem="fb5-TS-lDR" firstAttribute="leading" secondItem="Rhp-VJ-F08" secondAttribute="leading" constant="15" id="zlD-JX-AOR"/>
-                        <constraint firstItem="Ral-bs-OKp" firstAttribute="centerX" secondItem="fb5-TS-lDR" secondAttribute="centerX" id="zpw-yJ-zKH"/>
+                        <constraint firstItem="DtI-dI-H2g" firstAttribute="centerX" secondItem="uIm-ba-cJJ" secondAttribute="centerX" id="0E7-1j-eY9"/>
+                        <constraint firstItem="cl9-Je-t9s" firstAttribute="leading" secondItem="fVA-Wm-j3S" secondAttribute="leading" id="0Gk-73-3VG"/>
+                        <constraint firstItem="MT0-Fg-lyb" firstAttribute="top" secondItem="TYY-sU-FbO" secondAttribute="bottom" constant="10" id="2Pu-vh-jQQ"/>
+                        <constraint firstItem="bwi-qx-HOT" firstAttribute="top" secondItem="DtI-dI-H2g" secondAttribute="bottom" constant="98" id="56z-WX-KP6"/>
+                        <constraint firstItem="cl9-Je-t9s" firstAttribute="trailing" secondItem="fVA-Wm-j3S" secondAttribute="trailing" id="JJs-nk-U1v"/>
+                        <constraint firstItem="DtI-dI-H2g" firstAttribute="width" secondItem="uIm-ba-cJJ" secondAttribute="width" id="OLY-a5-WRw"/>
+                        <constraint firstItem="TYY-sU-FbO" firstAttribute="centerX" secondItem="bwi-qx-HOT" secondAttribute="centerX" id="UB9-VV-BcP"/>
+                        <constraint firstItem="bwi-qx-HOT" firstAttribute="centerX" secondItem="Rhp-VJ-F08" secondAttribute="centerX" id="V9a-kb-28H"/>
+                        <constraint firstItem="uIm-ba-cJJ" firstAttribute="width" secondItem="fVA-Wm-j3S" secondAttribute="width" constant="-30" id="XQn-qG-wGz"/>
+                        <constraint firstItem="TYY-sU-FbO" firstAttribute="top" secondItem="bwi-qx-HOT" secondAttribute="bottom" constant="99" id="XlH-KA-HNR"/>
+                        <constraint firstItem="TYY-sU-FbO" firstAttribute="width" secondItem="bwi-qx-HOT" secondAttribute="width" id="Z7X-SX-jZ5"/>
+                        <constraint firstItem="fVA-Wm-j3S" firstAttribute="top" secondItem="cl9-Je-t9s" secondAttribute="bottom" id="bNa-1c-5d8"/>
+                        <constraint firstItem="DtI-dI-H2g" firstAttribute="top" secondItem="uIm-ba-cJJ" secondAttribute="bottom" constant="20" id="c2h-Xm-5bj"/>
+                        <constraint firstItem="uIm-ba-cJJ" firstAttribute="top" secondItem="fVA-Wm-j3S" secondAttribute="bottom" constant="51" id="cwT-b1-vPG"/>
+                        <constraint firstItem="MT0-Fg-lyb" firstAttribute="leading" secondItem="Rhp-VJ-F08" secondAttribute="leading" constant="20" id="fAI-QL-oxY"/>
+                        <constraint firstItem="YND-id-cdD" firstAttribute="centerY" secondItem="MT0-Fg-lyb" secondAttribute="centerY" id="hlc-Ni-X8m"/>
+                        <constraint firstItem="YND-id-cdD" firstAttribute="width" secondItem="MT0-Fg-lyb" secondAttribute="width" id="jzZ-C1-kfq"/>
+                        <constraint firstItem="YND-id-cdD" firstAttribute="leading" secondItem="MT0-Fg-lyb" secondAttribute="trailing" constant="35" id="leR-na-e46"/>
+                        <constraint firstAttribute="trailing" secondItem="YND-id-cdD" secondAttribute="trailing" constant="20" id="nwy-hn-hGq"/>
+                        <constraint firstItem="cl9-Je-t9s" firstAttribute="top" secondItem="Rhp-VJ-F08" secondAttribute="top" constant="4" id="nzu-RS-0Qe"/>
+                        <constraint firstAttribute="trailing" secondItem="fVA-Wm-j3S" secondAttribute="trailing" id="oXz-eE-cmT"/>
+                        <constraint firstItem="cl9-Je-t9s" firstAttribute="leading" secondItem="Rhp-VJ-F08" secondAttribute="leading" id="qUa-ij-lOi"/>
+                        <constraint firstItem="YND-id-cdD" firstAttribute="height" secondItem="MT0-Fg-lyb" secondAttribute="height" id="s2O-XU-1Pg"/>
+                        <constraint firstAttribute="bottom" secondItem="MT0-Fg-lyb" secondAttribute="bottom" constant="4" id="sW0-IT-JTb"/>
+                        <constraint firstItem="uIm-ba-cJJ" firstAttribute="centerX" secondItem="fVA-Wm-j3S" secondAttribute="centerX" id="wZs-zU-doC"/>
                     </constraints>
                 </scrollView>
             </subviews>
@@ -248,9 +208,6 @@
     </objects>
     <resources>
         <image name="LOGO-white" width="204.5" height="100.5"/>
-        <image name="arrow-white" width="32.5" height="23.5"/>
-        <image name="facebook" width="76" height="23.5"/>
-        <image name="google" width="76" height="23.5"/>
         <image name="shopping cart_1" width="24.5" height="23.5"/>
     </resources>
 </document>

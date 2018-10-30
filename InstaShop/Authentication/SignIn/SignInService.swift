@@ -35,6 +35,8 @@ class SignInService: NSObject {
         if let json = data as? [String : Any] {
             if let result = json["Exist"]  as? Int {
                 if(result == 1){
+                    var user:User!
+                    user.mapping(map: (json["User"] as? [String:Any]));
                     return true
                 }else{
                     return false

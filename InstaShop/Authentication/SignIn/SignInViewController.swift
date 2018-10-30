@@ -131,10 +131,10 @@ class SignInViewController: BaseViewController , UITextFieldDelegate{
             self.alert(message: NSLocalizedString("Validation_Alert", comment: ""))
             return false
         }
-        else if (!isValidEmail(testStr: email.text! ) && !isValidPhoneNumber(testStr: email.text! )){
-            self.alert(message:NSLocalizedString("EmailOrPhoneNotValidMsg_key", comment: "") )
-            return false
-        }
+//        else if (!isValidEmail(testStr: email.text! ) && !isValidPhoneNumber(testStr: email.text! )){
+//            self.alert(message:NSLocalizedString("EmailOrPhoneNotValidMsg_key", comment: "") )
+//            return false
+//        }
         self.params.updateValue(email.text ?? "", forKey: "phone")
         self.params.updateValue(password.text ?? "", forKey: "password")
         return true;
