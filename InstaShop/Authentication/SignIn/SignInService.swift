@@ -35,8 +35,9 @@ class SignInService: NSObject {
         if let json = data as? [String : Any] {
             if let result = json["Exist"]  as? Int {
                 if(result == 1){
-                    var user:User!
-                    user.mapping(map: (json["User"] as? [String:Any]));
+                    let defaults = UserDefaults.standard
+                    let user = User.newInstance(map: (json["User"] as? Map)!)
+                    defaults.set(user, forKey: "user")
                     return true
                 }else{
                     return false

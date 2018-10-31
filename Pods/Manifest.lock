@@ -1,12 +1,18 @@
 PODS:
   - Alamofire (4.7.1)
   - DLRadioButton (1.4.11)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
   - LGSideMenuController (2.1.1)
   - ObjectMapper (3.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - DLRadioButton (~> 1.4)
+  - GoogleMaps
   - LGSideMenuController
   - ObjectMapper (~> 3.3)
 
@@ -14,15 +20,17 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - DLRadioButton
+    - GoogleMaps
     - LGSideMenuController
     - ObjectMapper
 
 SPEC CHECKSUMS:
   Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
   DLRadioButton: 0d04b8259e7bfd886571a1e9173c73fee7118f50
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
 
-PODFILE CHECKSUM: 6ac018d0bc17e39eac533961ad64ad37db798331
+PODFILE CHECKSUM: c6d447c3762e77bf36f366d2b8e52e78aedb5440
 
 COCOAPODS: 1.5.3

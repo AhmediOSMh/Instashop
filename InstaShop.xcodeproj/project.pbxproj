@@ -381,6 +381,7 @@
 				3B58D30A2168DCE7000041EE /* Frameworks */,
 				3B58D30B2168DCE7000041EE /* Resources */,
 				F1D21C90512F4FB513B35233 /* [CP] Embed Pods Frameworks */,
+				46D28C692ADA3F6373D3B674 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -454,6 +455,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		46D28C692ADA3F6373D3B674 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F1D21C90512F4FB513B35233 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

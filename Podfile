@@ -10,4 +10,5 @@ target 'InstaShop' do
   pod 'Alamofire', '~> 4.7'
   pod 'DLRadioButton', '~> 1.4'
   pod 'ObjectMapper', '~> 3.3'
+  pod 'GoogleMaps'
 end
