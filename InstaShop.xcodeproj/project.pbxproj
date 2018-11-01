@@ -63,6 +63,9 @@
 		C044D049217D14F200BA2400 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044D048217D14F200BA2400 /* SignInService.swift */; };
 		C044D04B217D150700BA2400 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C044D04A217D150700BA2400 /* SignInViewController.xib */; };
 		C0AFFE5A2185EC1E00EF908D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AFFE592185EC1E00EF908D /* Fonts.swift */; };
+		FAC39623218B378800E4D59E /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC39622218B378800E4D59E /* BaseController.swift */; };
+		FAC39628218B37C900E4D59E /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC39625218B37C900E4D59E /* MenuController.swift */; };
+		FAC39629218B37C900E4D59E /* MenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC39626218B37C900E4D59E /* MenuController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +131,10 @@
 		C044D04A217D150700BA2400 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		C0AFFE592185EC1E00EF908D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		F501ECB14DACA05A76FB1C0A /* Pods-InstaShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop.release.xcconfig"; sourceTree = "<group>"; };
+		FAC39622218B378800E4D59E /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		FAC39625218B37C900E4D59E /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		FAC39626218B37C900E4D59E /* MenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuController.xib; sourceTree = "<group>"; };
+		FAC39627218B37C900E4D59E /* SSB-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSB-Bridging-Header.h"; sourceTree = "<group>"; };
 		FDF25B41CF25195F5371D269 /* Pods_InstaShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -259,6 +266,8 @@
 		3B58D30F2168DCE7000041EE /* InstaShop */ = {
 			isa = PBXGroup;
 			children = (
+				FAC39624218B37B700E4D59E /* Menu */,
+				FAC39621218B377400E4D59E /* Helpers */,
 				3B17E5FE2185E34600A145AA /* Models */,
 				3BDD3452217B4AC0003035CF /* GPS */,
 				3BDD3447217B4564003035CF /* Stores */,
@@ -369,6 +378,24 @@
 			path = SignIn;
 			sourceTree = "<group>";
 		};
+		FAC39621218B377400E4D59E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAC39622218B378800E4D59E /* BaseController.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FAC39624218B37B700E4D59E /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FAC39625218B37C900E4D59E /* MenuController.swift */,
+				FAC39626218B37C900E4D59E /* MenuController.xib */,
+				FAC39627218B37C900E4D59E /* SSB-Bridging-Header.h */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -444,6 +471,7 @@
 				3B74B752216EA346004FD12B /* Localizable.strings in Resources */,
 				3B3EBC9A2176806B00E100C1 /* InputLongCell.xib in Resources */,
 				3B74B747216EA1BA004FD12B /* bein_ar_black.ttf in Resources */,
+				FAC39629218B37C900E4D59E /* MenuController.xib in Resources */,
 				3B58D31B2168DCE8000041EE /* Assets.xcassets in Resources */,
 				3B3EBC932176806B00E100C1 /* ButtonCell.xib in Resources */,
 				3B74B746216EA1BA004FD12B /* SignUpViewController.xib in Resources */,
@@ -483,6 +511,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
+				"${BUILT_PRODUCTS_DIR}/MFSideMenu/MFSideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -490,6 +519,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MFSideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC39628218B37C900E4D59E /* MenuController.swift in Sources */,
 				3B3EBC7C21767F8000E100C1 /* DateUtils.swift in Sources */,
 				3B3EBC922176806B00E100C1 /* ButtonCell.swift in Sources */,
 				3BDD3451217B48E9003035CF /* BaseViewController.swift in Sources */,
@@ -538,6 +569,7 @@
 				3B58D3132168DCE7000041EE /* ViewController.swift in Sources */,
 				3B3EBC912176806B00E100C1 /* BaseCell.swift in Sources */,
 				3B3EBCA9217688A300E100C1 /* LoaderApp.swift in Sources */,
+				FAC39623218B378800E4D59E /* BaseController.swift in Sources */,
 				3B74B75A216EA70D004FD12B /* TextField.swift in Sources */,
 				3B3EBC7B21767F8000E100C1 /* CheckBox.swift in Sources */,
 				3BDD3446217B37E2003035CF /* L102Language.swift in Sources */,
@@ -711,12 +743,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K685D8R3WX;
+				DEVELOPMENT_TEAM = YM8CFU85ZD;
 				INFOPLIST_FILE = InstaShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devPlus.InstaShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/InstaShop/Menu/SSB-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -728,12 +761,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K685D8R3WX;
+				DEVELOPMENT_TEAM = YM8CFU85ZD;
 				INFOPLIST_FILE = InstaShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devPlus.InstaShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/InstaShop/Menu/SSB-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

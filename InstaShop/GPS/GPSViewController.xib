@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -16,6 +16,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GPSViewController" customModule="InstaShop" customModuleProvider="target">
             <connections>
+                <outlet property="GpsBtn" destination="jPE-Xv-NIu" id="PVg-y0-Cb5"/>
+                <outlet property="address" destination="0JG-CT-4Bw" id="Brc-pS-JqX"/>
+                <outlet property="gpsLbl" destination="e49-Zr-I7S" id="GG2-UQ-jtD"/>
+                <outlet property="mapView" destination="16X-CS-lM5" id="mxh-1F-gwT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,6 +32,15 @@
                     <rect key="frame" x="-0.5" y="0.0" width="375" height="567"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0JG-CT-4Bw" customClass="TextField" customModule="InstaShop" customModuleProvider="target">
+                    <rect key="frame" x="10" y="20" width="355" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Vxa-EY-Fwb"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e49-Zr-I7S" customClass="Label" customModule="InstaShop" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="572" width="375" height="30"/>
                     <constraints>
@@ -53,14 +66,20 @@
                             <real key="value" value="10"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="RetryAction:" destination="-1" eventType="touchUpInside" id="euc-g3-pUy"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="0JG-CT-4Bw" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" constant="-20" id="4q7-4G-rBJ"/>
                 <constraint firstItem="e49-Zr-I7S" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H1l-rG-c4x"/>
                 <constraint firstItem="16X-CS-lM5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L46-9e-ELZ"/>
                 <constraint firstItem="16X-CS-lM5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LAb-21-bq3"/>
+                <constraint firstItem="0JG-CT-4Bw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ndh-BB-Cbv"/>
                 <constraint firstItem="jPE-Xv-NIu" firstAttribute="centerX" secondItem="e49-Zr-I7S" secondAttribute="centerX" id="Szb-2V-pkK"/>
+                <constraint firstItem="0JG-CT-4Bw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Uwr-Wh-hfL"/>
                 <constraint firstItem="16X-CS-lM5" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="WA5-MZ-VVz"/>
                 <constraint firstItem="e49-Zr-I7S" firstAttribute="top" secondItem="16X-CS-lM5" secondAttribute="bottom" constant="5" id="cWK-AN-F77"/>
                 <constraint firstItem="e49-Zr-I7S" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="cfl-Md-RuW"/>

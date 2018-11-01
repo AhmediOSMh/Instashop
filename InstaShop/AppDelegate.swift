@@ -8,21 +8,92 @@
 
 import UIKit
 import CoreData
+import MFSideMenu
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    var sideMenu : MFSideMenuContainerViewController?
+    var navVC:UINavigationController?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-       //  LanguageManger.shared.defaultLanguage = .en
+         LanguageManger.shared.defaultLanguage = .en
         UserDefaults.standard.set("en", forKey: "selectedLanguage")
         L102Localizer.DoTheMagic()
-        let navVC:UINavigationController = UINavigationController(rootViewController: SignInViewController())
-        self.window?.rootViewController = navVC;
+      /*  let navVC:UINavigationController = UINavigationController(rootViewController: SignInViewController())
+        self.window?.rootViewController = navVC;*/
+        LanguageManger.shared.defaultLanguage = .ar
+        let userDefaults = Foundation.UserDefaults.standard
+        if userDefaults.string(forKey: "selectedLanguage") == nil || userDefaults.string(forKey: "selectedLanguage") == "" {
+            if(LanguageManger.shared.isRightToLeft==true)
+            {
+                language = "ar"
+                userDefaults.set( language, forKey: "selectedLanguage")
+                LanguageManger.shared.defaultLanguage = .ar
+            }
+            else {
+                language = "en"
+                userDefaults.set( language, forKey: "selectedLanguage")
+                LanguageManger.shared.defaultLanguage = .en
+            }
+        } else {
+            language = userDefaults.string(forKey: "selectedLanguage")!
+            if language == "ar" {
+                LanguageManger.shared.defaultLanguage = .ar
+            } else {
+                LanguageManger.shared.defaultLanguage = .en
+            }
+            
+        }
+        self.window = UIWindow(frame:UIScreen.main.bounds)
+       /* if  (CDUserModel.getUserData() != nil) {
+            self.window?.rootViewController = self.getLandingPageWithSideMenu()
+        } else {*/
+            let centerVC = SignInViewController()
+            centerVC.view.backgroundColor = UIColor.white;
+            var navVC:UINavigationController = UINavigationController(rootViewController: centerVC)
+            self.window?.rootViewController = navVC;
+       // }
+        self.window?.tintColor = UIColor.white
+        self.window?.makeKeyAndVisible()
+        GMSServices.provideAPIKey(GoogleMapKey)
         return true
+    }
+    func enableSideMenuPan (isEnabled:Bool){
+        
+        sideMenu?.panMode = (isEnabled) ? MFSideMenuPanModeDefault : MFSideMenuPanModeNone
+        
+    }
+    
+    func getNavControllerWithRootController(controller : BaseController)->UINavigationController{
+        self.navVC = UINavigationController(rootViewController: controller)
+        self.navVC?.interactivePopGestureRecognizer?.isEnabled = true
+        return self.navVC!
+    }
+    func getLandingPageWithSideMenu()->UIViewController {
+        
+        self.navVC = self.getNavControllerWithRootController(controller: GPSViewController())
+        let leftController = MenuController()
+        let rightController = MenuController()
+        
+        sideMenu = MFSideMenuContainerViewController.container(withCenter: navVC, leftMenuViewController: leftController, rightMenuViewController: rightController)
+        sideMenu?.menuContainerViewController.panMode = MFSideMenuPanModeNone
+        
+        return sideMenu!
+    }
+    
+    
+    func getInstance()->AppDelegate{
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate
+    }
+    func getSideMenuController ()-> MenuController {
+        let controller:MenuController = LanguageManger.shared.isRightToLeft == true ? sideMenu!.rightMenuViewController as! MenuController : sideMenu!.leftMenuViewController as! MenuController
+        
+        return controller
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

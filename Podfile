@@ -11,5 +11,6 @@ target 'InstaShop' do
   pod 'DLRadioButton', '~> 1.4'
   pod 'ObjectMapper'
   pod 'GoogleMaps'
+  pod 'MFSideMenu'
 end
 

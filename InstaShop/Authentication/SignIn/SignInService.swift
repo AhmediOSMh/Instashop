@@ -20,6 +20,8 @@ class SignInService: NSObject {
             switch data.result {
                 
             case .success(let data):
+                let appDelegate: AppDelegate? = UIApplication.shared.delegate as? AppDelegate
+                appDelegate?.getInstance().window?.rootViewController = appDelegate?.getLandingPageWithSideMenu()
                 debugPrint("data ===>", data)
                 let result: Bool? = self.handleMappingResponse(data: data)
                 completion(result)
@@ -35,9 +37,9 @@ class SignInService: NSObject {
         if let json = data as? [String : Any] {
             if let result = json["Exist"]  as? Int {
                 if(result == 1){
-                    let defaults = UserDefaults.standard
+                  /*  let defaults = UserDefaults.standard
                     let user = User.newInstance(map: (json["User"] as? Map)!)
-                    defaults.set(user, forKey: "user")
+                    defaults.set(user, forKey: "user")*/
                     return true
                 }else{
                     return false

@@ -8,8 +8,12 @@
 
 import UIKit
 
-class GPSViewController: UIViewController {
+class GPSViewController: BaseController {
 
+    @IBOutlet weak var address: TextField!
+    @IBOutlet weak var gpsLbl: Label!
+    @IBOutlet weak var GpsBtn: Button!
+    @IBOutlet weak var mapView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +26,8 @@ class GPSViewController: UIViewController {
     }
     
 
+    @IBAction func RetryAction(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

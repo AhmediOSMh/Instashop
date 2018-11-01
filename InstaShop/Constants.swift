@@ -8,6 +8,8 @@
 
 import Foundation
 
+var language = String()
+let GoogleMapKey = "AIzaSyAFc0_qVlD-0JgoegBzSn6qpn-wA3SxIIM"
 let BaseURL = "http://insta.arabepro.net/API/"
 let signUpURL = BaseURL + "user/new"
 let AuthenticationURL = BaseURL + "user/login"
