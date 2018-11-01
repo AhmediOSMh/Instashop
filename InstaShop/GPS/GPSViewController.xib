@@ -17,9 +17,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GPSViewController" customModule="InstaShop" customModuleProvider="target">
             <connections>
                 <outlet property="GpsBtn" destination="jPE-Xv-NIu" id="PVg-y0-Cb5"/>
+                <outlet property="Viewmap" destination="16X-CS-lM5" id="Kza-Dq-uaH"/>
                 <outlet property="address" destination="0JG-CT-4Bw" id="Brc-pS-JqX"/>
                 <outlet property="gpsLbl" destination="e49-Zr-I7S" id="GG2-UQ-jtD"/>
-                <outlet property="mapView" destination="16X-CS-lM5" id="mxh-1F-gwT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
