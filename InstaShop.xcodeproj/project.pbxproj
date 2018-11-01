@@ -58,7 +58,7 @@
 		3BDD3451217B48E9003035CF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3450217B48E9003035CF /* BaseViewController.swift */; };
 		3BDD3455217B4AE4003035CF /* GPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3453217B4AE4003035CF /* GPSViewController.swift */; };
 		3BDD3456217B4AE4003035CF /* GPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BDD3454217B4AE4003035CF /* GPSViewController.xib */; };
-		3DFBD236505E18CD6293B7D8 /* Pods_InstaShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C9CE6C4A84D17040A77FE6 /* Pods_InstaShop.framework */; };
+		92B9B7855C1E2AAF9E0EA5E5 /* Pods_InstaShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF25B41CF25195F5371D269 /* Pods_InstaShop.framework */; };
 		C044D047217D14B700BA2400 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044D046217D14B700BA2400 /* SignInViewController.swift */; };
 		C044D049217D14F200BA2400 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044D048217D14F200BA2400 /* SignInService.swift */; };
 		C044D04B217D150700BA2400 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C044D04A217D150700BA2400 /* SignInViewController.xib */; };
@@ -122,13 +122,13 @@
 		3BDD3450217B48E9003035CF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3BDD3453217B4AE4003035CF /* GPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSViewController.swift; sourceTree = "<group>"; };
 		3BDD3454217B4AE4003035CF /* GPSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPSViewController.xib; sourceTree = "<group>"; };
-		78DFA8D25F36A48F1286D3C9 /* Pods-InstaShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop.debug.xcconfig"; sourceTree = "<group>"; };
-		AD8280C117EEE7BABF2F32BA /* Pods-InstaShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop.release.xcconfig"; sourceTree = "<group>"; };
+		5BF874B62EE139D62A20FBEA /* Pods-InstaShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop.debug.xcconfig"; sourceTree = "<group>"; };
 		C044D046217D14B700BA2400 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C044D048217D14F200BA2400 /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 		C044D04A217D150700BA2400 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		C0AFFE592185EC1E00EF908D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		F7C9CE6C4A84D17040A77FE6 /* Pods_InstaShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F501ECB14DACA05A76FB1C0A /* Pods-InstaShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop.release.xcconfig"; sourceTree = "<group>"; };
+		FDF25B41CF25195F5371D269 /* Pods_InstaShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,18 +136,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DFBD236505E18CD6293B7D8 /* Pods_InstaShop.framework in Frameworks */,
+				92B9B7855C1E2AAF9E0EA5E5 /* Pods_InstaShop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2FEAFC8981649959EFC9677B /* Pods */ = {
+		16CE5551EBBF71FA82791455 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				78DFA8D25F36A48F1286D3C9 /* Pods-InstaShop.debug.xcconfig */,
-				AD8280C117EEE7BABF2F32BA /* Pods-InstaShop.release.xcconfig */,
+				5BF874B62EE139D62A20FBEA /* Pods-InstaShop.debug.xcconfig */,
+				F501ECB14DACA05A76FB1C0A /* Pods-InstaShop.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -243,8 +243,8 @@
 			children = (
 				3B58D30F2168DCE7000041EE /* InstaShop */,
 				3B58D30E2168DCE7000041EE /* Products */,
-				2FEAFC8981649959EFC9677B /* Pods */,
-				72D81F363F081373B88A1E9B /* Frameworks */,
+				16CE5551EBBF71FA82791455 /* Pods */,
+				83DA623B7FEAD2E27B3D12D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -351,10 +351,10 @@
 			path = GPS;
 			sourceTree = "<group>";
 		};
-		72D81F363F081373B88A1E9B /* Frameworks */ = {
+		83DA623B7FEAD2E27B3D12D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F7C9CE6C4A84D17040A77FE6 /* Pods_InstaShop.framework */,
+				FDF25B41CF25195F5371D269 /* Pods_InstaShop.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -460,15 +460,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 			);
@@ -711,7 +707,7 @@
 		};
 		3B58D3232168DCE8000041EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78DFA8D25F36A48F1286D3C9 /* Pods-InstaShop.debug.xcconfig */;
+			baseConfigurationReference = 5BF874B62EE139D62A20FBEA /* Pods-InstaShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -728,7 +724,7 @@
 		};
 		3B58D3242168DCE8000041EE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD8280C117EEE7BABF2F32BA /* Pods-InstaShop.release.xcconfig */;
+			baseConfigurationReference = F501ECB14DACA05A76FB1C0A /* Pods-InstaShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
