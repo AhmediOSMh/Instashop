@@ -42,7 +42,8 @@ class GPSViewController: BaseController {
     
 
     @IBAction func RetryAction(_ sender: Any) {
-        let newViewController = AllStoresViewController()
+        let newViewController = AllStoresViewController(nibName: "AllStoresViewController", bundle: nil)
+
         self.navigationController?.pushViewController(newViewController, animated: true)
     }
     /*

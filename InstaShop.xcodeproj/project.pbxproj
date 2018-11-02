@@ -68,6 +68,7 @@
 		FAC39629218B37C900E4D59E /* MenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC39626218B37C900E4D59E /* MenuController.xib */; };
 		FAC39634218C8AD600E4D59E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC39632218C8AD500E4D59E /* Utilities.swift */; };
 		FAC39635218C8AD600E4D59E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC39633218C8AD600E4D59E /* Extensions.swift */; };
+		FAC39637218C8F5400E4D59E /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC39636218C8F4900E4D59E /* CAPSPageMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +140,7 @@
 		FAC39627218B37C900E4D59E /* SSB-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSB-Bridging-Header.h"; sourceTree = "<group>"; };
 		FAC39632218C8AD500E4D59E /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FAC39633218C8AD600E4D59E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FAC39636218C8F4900E4D59E /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
 		FDF25B41CF25195F5371D269 /* Pods_InstaShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -385,6 +387,7 @@
 		FAC39621218B377400E4D59E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FAC39636218C8F4900E4D59E /* CAPSPageMenu.swift */,
 				FAC39633218C8AD600E4D59E /* Extensions.swift */,
 				FAC39632218C8AD500E4D59E /* Utilities.swift */,
 				FAC39622218B378800E4D59E /* BaseController.swift */,
@@ -519,7 +522,6 @@
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/MFSideMenu/MFSideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -528,7 +530,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MFSideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PageMenu.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -586,6 +587,7 @@
 				3BDD3455217B4AE4003035CF /* GPSViewController.swift in Sources */,
 				3B58D3192168DCE7000041EE /* InstaShop.xcdatamodeld in Sources */,
 				3B3EBCA6217688A300E100C1 /* ColorExtension.swift in Sources */,
+				FAC39637218C8F5400E4D59E /* CAPSPageMenu.swift in Sources */,
 				3B3EBC972176806B00E100C1 /* InputCell.swift in Sources */,
 				3B17E6002185E36300A145AA /* User.swift in Sources */,
 				3B3EBCAE21769AED00E100C1 /* SignUpService.swift in Sources */,
