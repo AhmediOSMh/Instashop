@@ -69,6 +69,10 @@
 		FAC39634218C8AD600E4D59E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC39632218C8AD500E4D59E /* Utilities.swift */; };
 		FAC39635218C8AD600E4D59E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC39633218C8AD600E4D59E /* Extensions.swift */; };
 		FAC39637218C8F5400E4D59E /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC39636218C8F4900E4D59E /* CAPSPageMenu.swift */; };
+		FAC39640218CA68300E4D59E /* ListAllStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3963E218CA68300E4D59E /* ListAllStoreViewController.swift */; };
+		FAC39641218CA68300E4D59E /* ListAllStoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC3963F218CA68300E4D59E /* ListAllStoreViewController.xib */; };
+		FAC39644218CA79200E4D59E /* AllStoresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC39642218CA79200E4D59E /* AllStoresCell.swift */; };
+		FAC39645218CA79200E4D59E /* AllStoresCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC39643218CA79200E4D59E /* AllStoresCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +145,10 @@
 		FAC39632218C8AD500E4D59E /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FAC39633218C8AD600E4D59E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FAC39636218C8F4900E4D59E /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		FAC3963E218CA68300E4D59E /* ListAllStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAllStoreViewController.swift; sourceTree = "<group>"; };
+		FAC3963F218CA68300E4D59E /* ListAllStoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListAllStoreViewController.xib; sourceTree = "<group>"; };
+		FAC39642218CA79200E4D59E /* AllStoresCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllStoresCell.swift; sourceTree = "<group>"; };
+		FAC39643218CA79200E4D59E /* AllStoresCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllStoresCell.xib; sourceTree = "<group>"; };
 		FDF25B41CF25195F5371D269 /* Pods_InstaShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -211,6 +219,8 @@
 				3B3EBC8B2176806B00E100C1 /* InputLongCell.xib */,
 				3B3EBC8C2176806B00E100C1 /* ViewCell.swift */,
 				3B3EBC8D2176806B00E100C1 /* ViewCell.xib */,
+				FAC39642218CA79200E4D59E /* AllStoresCell.swift */,
+				FAC39643218CA79200E4D59E /* AllStoresCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -353,6 +363,8 @@
 			children = (
 				3BDD3448217B4594003035CF /* AllStoresViewController.swift */,
 				3BDD3449217B4594003035CF /* AllStoresViewController.xib */,
+				FAC3963E218CA68300E4D59E /* ListAllStoreViewController.swift */,
+				FAC3963F218CA68300E4D59E /* ListAllStoreViewController.xib */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -475,6 +487,7 @@
 				3B3EBC982176806B00E100C1 /* InputCell.xib in Resources */,
 				3B74B74A216EA1BA004FD12B /* cortoba.ttf in Resources */,
 				C044D04B217D150700BA2400 /* SignInViewController.xib in Resources */,
+				FAC39645218CA79200E4D59E /* AllStoresCell.xib in Resources */,
 				3B74B748216EA1BA004FD12B /* bein_ar_normal.ttf in Resources */,
 				3B58D31E2168DCE8000041EE /* LaunchScreen.storyboard in Resources */,
 				3B74B752216EA346004FD12B /* Localizable.strings in Resources */,
@@ -482,6 +495,7 @@
 				3B74B747216EA1BA004FD12B /* bein_ar_black.ttf in Resources */,
 				FAC39629218B37C900E4D59E /* MenuController.xib in Resources */,
 				3B58D31B2168DCE8000041EE /* Assets.xcassets in Resources */,
+				FAC39641218CA68300E4D59E /* ListAllStoreViewController.xib in Resources */,
 				3B3EBC932176806B00E100C1 /* ButtonCell.xib in Resources */,
 				3B74B746216EA1BA004FD12B /* SignUpViewController.xib in Resources */,
 				3B58D3162168DCE7000041EE /* Main.storyboard in Resources */,
@@ -566,6 +580,7 @@
 				3B3EBC922176806B00E100C1 /* ButtonCell.swift in Sources */,
 				3BDD3451217B48E9003035CF /* BaseViewController.swift in Sources */,
 				3B3EBC992176806B00E100C1 /* InputLongCell.swift in Sources */,
+				FAC39644218CA79200E4D59E /* AllStoresCell.swift in Sources */,
 				3B74B74B216EA1BA004FD12B /* Constants.swift in Sources */,
 				3BDD344A217B4594003035CF /* AllStoresViewController.swift in Sources */,
 				3BDD3445217B37E2003035CF /* L012Localizer.swift in Sources */,
@@ -573,6 +588,7 @@
 				3B74B758216EA70D004FD12B /* Button.swift in Sources */,
 				3B3EBCB021769E4500E100C1 /* AppDelegate+loader.swift in Sources */,
 				3B3EBC952176806B00E100C1 /* DropdownCell.swift in Sources */,
+				FAC39640218CA68300E4D59E /* ListAllStoreViewController.swift in Sources */,
 				3B3EBCA7217688A300E100C1 /* ViewExtension.swift in Sources */,
 				FAC39635218C8AD600E4D59E /* Extensions.swift in Sources */,
 				3B4FDC902178B76600E73BB7 /* CustomRadioButton.swift in Sources */,

@@ -15,7 +15,7 @@ class AllStoresViewController: UIViewController {
     var pageMenuConfig : [CAPSPageMenuOption]!
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        edgesForExtendedLayout = []
         pageMenuConfig = [
             .SelectionIndicatorHeight(0.0)
             ,.MenuItemSeparatorWidth(1.0)
@@ -33,13 +33,13 @@ class AllStoresViewController: UIViewController {
           
         ]
         var controllerArray = [UIViewController]()
-        let controller1 : UIViewController = UIViewController()
-        controller1.view.backgroundColor = UIColor.purple
+        let controller1 : UIViewController = ListAllStoreViewController()
+       // controller1.view.backgroundColor = UIColor.purple
         controller1.title = "PURPLE"
         controllerArray.append(controller1)
         
-        let controller2 : UIViewController = UIViewController()
-        controller2.view.backgroundColor = UIColor.orange
+        let controller2 : UIViewController = ListAllStoreViewController()
+        //controller2.view.backgroundColor = UIColor.orange
         controller2.title = "ORANGE"
         controllerArray.append(controller2)
         
@@ -48,8 +48,8 @@ class AllStoresViewController: UIViewController {
         controller3.title = "GRAY"
         controllerArray.append(controller3)
         
-        let controller4 : UIViewController = UIViewController()
-        controller4.view.backgroundColor = UIColor.brown
+        let controller4 : UIViewController = ListAllStoreViewController()
+        //controller4.view.backgroundColor = UIColor.brown
         controller4.title = "BROWN"
         controllerArray.append(controller4)
         
