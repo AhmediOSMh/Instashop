@@ -55,6 +55,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let centerVC = SignInViewController()
             centerVC.view.backgroundColor = UIColor.white;
             var navVC:UINavigationController = UINavigationController(rootViewController: centerVC)
+        UINavigationBar.appearance().barTintColor = UIColorFromHex(hex: "#0D6E55")
+        
+            UINavigationBar.appearance().tintColor = UIColor.white
             self.window?.rootViewController = navVC;
        // }
         self.window?.tintColor = UIColor.white

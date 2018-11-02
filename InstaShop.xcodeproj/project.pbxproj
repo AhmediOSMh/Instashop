@@ -66,6 +66,8 @@
 		FAC39623218B378800E4D59E /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC39622218B378800E4D59E /* BaseController.swift */; };
 		FAC39628218B37C900E4D59E /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC39625218B37C900E4D59E /* MenuController.swift */; };
 		FAC39629218B37C900E4D59E /* MenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC39626218B37C900E4D59E /* MenuController.xib */; };
+		FAC39634218C8AD600E4D59E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC39632218C8AD500E4D59E /* Utilities.swift */; };
+		FAC39635218C8AD600E4D59E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC39633218C8AD600E4D59E /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +137,8 @@
 		FAC39625218B37C900E4D59E /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		FAC39626218B37C900E4D59E /* MenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuController.xib; sourceTree = "<group>"; };
 		FAC39627218B37C900E4D59E /* SSB-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSB-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAC39632218C8AD500E4D59E /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		FAC39633218C8AD600E4D59E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FDF25B41CF25195F5371D269 /* Pods_InstaShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -381,6 +385,8 @@
 		FAC39621218B377400E4D59E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FAC39633218C8AD600E4D59E /* Extensions.swift */,
+				FAC39632218C8AD500E4D59E /* Utilities.swift */,
 				FAC39622218B378800E4D59E /* BaseController.swift */,
 			);
 			path = Helpers;
@@ -513,6 +519,7 @@
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/MFSideMenu/MFSideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -521,6 +528,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MFSideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PageMenu.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -560,10 +568,12 @@
 				3B74B74B216EA1BA004FD12B /* Constants.swift in Sources */,
 				3BDD344A217B4594003035CF /* AllStoresViewController.swift in Sources */,
 				3BDD3445217B37E2003035CF /* L012Localizer.swift in Sources */,
+				FAC39634218C8AD600E4D59E /* Utilities.swift in Sources */,
 				3B74B758216EA70D004FD12B /* Button.swift in Sources */,
 				3B3EBCB021769E4500E100C1 /* AppDelegate+loader.swift in Sources */,
 				3B3EBC952176806B00E100C1 /* DropdownCell.swift in Sources */,
 				3B3EBCA7217688A300E100C1 /* ViewExtension.swift in Sources */,
+				FAC39635218C8AD600E4D59E /* Extensions.swift in Sources */,
 				3B4FDC902178B76600E73BB7 /* CustomRadioButton.swift in Sources */,
 				3B3EBC9B2176806B00E100C1 /* ViewCell.swift in Sources */,
 				3B58D3132168DCE7000041EE /* ViewController.swift in Sources */,

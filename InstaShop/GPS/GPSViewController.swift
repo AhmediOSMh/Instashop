@@ -17,10 +17,10 @@ class GPSViewController: BaseController {
     @IBOutlet weak var Viewmap: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadView()
+       // loadView()
         // Do any additional setup after loading the view.
     }
-    override func loadView() {
+    /*override func loadView() {
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
         let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
@@ -34,7 +34,7 @@ class GPSViewController: BaseController {
         marker.title = "Sydney"
         marker.snippet = "Australia"
         marker.map = mapView
-    }
+    }*/
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -42,6 +42,8 @@ class GPSViewController: BaseController {
     
 
     @IBAction func RetryAction(_ sender: Any) {
+        let newViewController = AllStoresViewController()
+        self.navigationController?.pushViewController(newViewController, animated: true)
     }
     /*
     // MARK: - Navigation
