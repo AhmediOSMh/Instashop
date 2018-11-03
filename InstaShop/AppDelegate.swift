@@ -11,6 +11,8 @@ import CoreData
 import MFSideMenu
 import GoogleMaps
 
+import GooglePlacePicker
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -49,9 +51,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         self.window = UIWindow(frame:UIScreen.main.bounds)
-       /* if  (CDUserModel.getUserData() != nil) {
+        if  (UserDefaults.standard.object(forKey: "userId") != nil) {
             self.window?.rootViewController = self.getLandingPageWithSideMenu()
-        } else {*/
+        } else {
             let centerVC = SignInViewController()
             centerVC.view.backgroundColor = UIColor.white;
             var navVC:UINavigationController = UINavigationController(rootViewController: centerVC)
@@ -59,10 +61,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
             UINavigationBar.appearance().tintColor = UIColor.white
             self.window?.rootViewController = navVC;
-       // }
+       }
         self.window?.tintColor = UIColor.white
         self.window?.makeKeyAndVisible()
         GMSServices.provideAPIKey(GoogleMapKey)
+        GMSPlacesClient.provideAPIKey(GoogleMapKey)
         return true
     }
     func enableSideMenuPan (isEnabled:Bool){
@@ -79,6 +82,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func getLandingPageWithSideMenu()->UIViewController {
         
         self.navVC = self.getNavControllerWithRootController(controller: GPSViewController())
+        UINavigationBar.appearance().barTintColor = UIColorFromHex(hex: "#0D6E55")
+        
+        UINavigationBar.appearance().tintColor = UIColor.white
         let leftController = MenuController()
         let rightController = MenuController()
         
@@ -88,7 +94,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return sideMenu!
     }
     
-    
+       
     func getInstance()->AppDelegate{
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         return appDelegate
@@ -125,4 +131,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 
 }
+
 

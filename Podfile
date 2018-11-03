@@ -12,6 +12,7 @@ target 'InstaShop' do
   pod 'ObjectMapper'
   pod 'GoogleMaps'
   pod 'MFSideMenu'
-  
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
 end
 

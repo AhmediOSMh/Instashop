@@ -25,7 +25,9 @@ class BaseController: UIViewController ,UITextFieldDelegate  {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func isKeyPresentInUserDefaults(key: String) -> Bool {
+        return UserDefaults.standard.object(forKey: key) != nil
+    }
     /*
      // MARK: - Navigation
      

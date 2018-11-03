@@ -7,34 +7,76 @@
 //
 
 import UIKit
+import GooglePlaces
 import GoogleMaps
+import GooglePlacePicker
 
-class GPSViewController: BaseController {
+class GPSViewController: BaseController, GMSMapViewDelegate ,CLLocationManagerDelegate{
 
     @IBOutlet weak var address: TextField!
     @IBOutlet weak var gpsLbl: Label!
     @IBOutlet weak var GpsBtn: Button!
     @IBOutlet weak var Viewmap: UIView!
+    var locationManager = CLLocationManager()
+    var mapView:GMSMapView?
     override func viewDidLoad() {
         super.viewDidLoad()
-       // loadView()
-        // Do any additional setup after loading the view.
+        edgesForExtendedLayout = []
+        address.layer.borderColor = UIColor.lightGray.cgColor
+        address.layer.borderWidth = 1.0
+        super.viewDidLoad()
+        
+        mapView = GMSMapView.map(withFrame: self.Viewmap.frame, camera: GMSCameraPosition.camera(withLatitude: 51.050657, longitude: 10.649514, zoom: 5.5))
+        mapView?.center = self.Viewmap.center
+        self.mapView?.isMyLocationEnabled = true
+        mapView?.settings.myLocationButton = true
+        //Location Manager code to fetch current location
+        self.locationManager.delegate = self
+        self.locationManager.startUpdatingLocation()
+        self.Viewmap.addSubview(mapView!)
+        self.address.delegate = self
+        
     }
-    /*override func loadView() {
-        // Create a GMSCameraPosition that tells the map to display the
-        // coordinate -33.86,151.20 at zoom level 6.
-        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        view = mapView
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        let acController = GMSAutocompleteViewController()
+        acController.delegate = self
+        self.present(acController, animated: true, completion: nil)
+    }
+}
+
+
+extension GPSViewController: GMSAutocompleteViewControllerDelegate {
+    
+    func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
         
+        print("Place name: \(place.name)")
+        print("Place address: \(place.formattedAddress ?? "null")")
+        self.address.text = place.formattedAddress
+        print("Place attributions: \(String(describing: place.attributions))")
         
-        // Creates a marker in the center of the map.
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
+        self.dismiss(animated: true, completion: nil)
+        var position = place
+        var marker = GMSMarker(position: position.coordinate)
+        marker.title = place.name
         marker.map = mapView
-    }*/
+        let cameraposition = GMSCameraPosition.camera(withLatitude: position.coordinate.latitude,
+                                              longitude:  position.coordinate.longitude,
+                                              zoom: 6)
+        mapView?.camera = cameraposition
+    }
+    func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
+        // TODO: handle the error.
+                print("Error: \(error)")
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    // User canceled the operation.
+    func wasCancelled(_ viewController: GMSAutocompleteViewController) {
+        print("Autocomplete was cancelled.")
+        self.dismiss(animated: true, completion: nil)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

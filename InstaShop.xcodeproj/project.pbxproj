@@ -50,6 +50,7 @@
 		3B74B759216EA70D004FD12B /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B756216EA70D004FD12B /* Label.swift */; };
 		3B74B75A216EA70D004FD12B /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B757216EA70D004FD12B /* TextField.swift */; };
 		3B74B75C216EA798004FD12B /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B74B75B216EA797004FD12B /* LanguageManager.swift */; };
+		3BC8C925218DC2860055F518 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8C924218DC2860055F518 /* PlaceMarker.swift */; };
 		3BDD3442217B341A003035CF /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3441217B341A003035CF /* Localizable.swift */; };
 		3BDD3445217B37E2003035CF /* L012Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3443217B37E2003035CF /* L012Localizer.swift */; };
 		3BDD3446217B37E2003035CF /* L102Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD3444217B37E2003035CF /* L102Language.swift */; };
@@ -124,6 +125,7 @@
 		3B74B756216EA70D004FD12B /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		3B74B757216EA70D004FD12B /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		3B74B75B216EA797004FD12B /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		3BC8C924218DC2860055F518 /* PlaceMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 		3BDD3441217B341A003035CF /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		3BDD3443217B37E2003035CF /* L012Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L012Localizer.swift; sourceTree = "<group>"; };
 		3BDD3444217B37E2003035CF /* L102Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L102Language.swift; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 			children = (
 				3BDD3453217B4AE4003035CF /* GPSViewController.swift */,
 				3BDD3454217B4AE4003035CF /* GPSViewController.xib */,
+				3BC8C924218DC2860055F518 /* PlaceMarker.swift */,
 			);
 			path = GPS;
 			sourceTree = "<group>";
@@ -514,10 +517,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-InstaShop/Pods-InstaShop-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -612,6 +619,7 @@
 				3BDD3442217B341A003035CF /* Localizable.swift in Sources */,
 				C044D049217D14F200BA2400 /* SignInService.swift in Sources */,
 				3B3EBC9D2176806B00E100C1 /* UITableView+Extensions.swift in Sources */,
+				3BC8C925218DC2860055F518 /* PlaceMarker.swift in Sources */,
 				C044D047217D14B700BA2400 /* SignInViewController.swift in Sources */,
 				3B3EBC942176806B00E100C1 /* CellType.swift in Sources */,
 				3B74B759216EA70D004FD12B /* Label.swift in Sources */,
@@ -775,7 +783,7 @@
 				INFOPLIST_FILE = InstaShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.devPlus.InstaShop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devPlus.TeleShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/InstaShop/Menu/SSB-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -793,7 +801,7 @@
 				INFOPLIST_FILE = InstaShop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.devPlus.InstaShop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devPlus.TeleShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/InstaShop/Menu/SSB-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
