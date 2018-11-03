@@ -13,4 +13,4 @@ let GoogleMapKey = "AIzaSyCbTevgyf5VPDC4e0AKt-3bFySexR5A0hQ"
 let BaseURL = "http://insta.arabepro.net/API/"
 let signUpURL = BaseURL + "user/new"
 let AuthenticationURL = BaseURL + "user/login"
-
+let AllStoresURL = BaseURL + "store/nearby"

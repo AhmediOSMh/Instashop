@@ -19,6 +19,7 @@ class GPSViewController: BaseController, GMSMapViewDelegate ,CLLocationManagerDe
     @IBOutlet weak var Viewmap: UIView!
     var locationManager = CLLocationManager()
     var mapView:GMSMapView?
+    var  placeAddress = CLLocationCoordinate2D()
     override func viewDidLoad() {
         super.viewDidLoad()
         edgesForExtendedLayout = []
@@ -57,6 +58,7 @@ extension GPSViewController: GMSAutocompleteViewControllerDelegate {
         
         self.dismiss(animated: true, completion: nil)
         var position = place
+        placeAddress = place.coordinate
         var marker = GMSMarker(position: position.coordinate)
         marker.title = place.name
         marker.map = mapView
@@ -85,7 +87,11 @@ extension GPSViewController: GMSAutocompleteViewControllerDelegate {
 
     @IBAction func RetryAction(_ sender: Any) {
         let newViewController = AllStoresViewController(nibName: "AllStoresViewController", bundle: nil)
-
+        let myDict = [ "longitude": placeAddress.longitude, "latitude": placeAddress.latitude]
+       //NotificationCenter.default.post(name: .address, object: nil, userInfo: myDict)
+        
+        let userDefaults = Foundation.UserDefaults.standard
+        userDefaults.set(myDict, forKey: "myDict")
         self.navigationController?.pushViewController(newViewController, animated: true)
     }
     /*
@@ -98,4 +104,7 @@ extension GPSViewController: GMSAutocompleteViewControllerDelegate {
     }
     */
 
+}
+extension Notification.Name {
+    static let address = Notification.Name("address")
 }

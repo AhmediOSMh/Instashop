@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B170292218E01A100E73526 /* StoresServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B170291218E01A100E73526 /* StoresServices.swift */; };
 		3B17E6002185E36300A145AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17E5FF2185E36300A145AA /* User.swift */; };
 		3B3EBC7B21767F8000E100C1 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC7921767F8000E100C1 /* CheckBox.swift */; };
 		3B3EBC7C21767F8000E100C1 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EBC7A21767F8000E100C1 /* DateUtils.swift */; };
@@ -77,6 +78,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B170291218E01A100E73526 /* StoresServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresServices.swift; sourceTree = "<group>"; };
 		3B17E5FF2185E36300A145AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3B3EBC7921767F8000E100C1 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		3B3EBC7A21767F8000E100C1 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 				3BDD3449217B4594003035CF /* AllStoresViewController.xib */,
 				FAC3963E218CA68300E4D59E /* ListAllStoreViewController.swift */,
 				FAC3963F218CA68300E4D59E /* ListAllStoreViewController.xib */,
+				3B170291218E01A100E73526 /* StoresServices.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 				3B4FDC902178B76600E73BB7 /* CustomRadioButton.swift in Sources */,
 				3B3EBC9B2176806B00E100C1 /* ViewCell.swift in Sources */,
 				3B58D3132168DCE7000041EE /* ViewController.swift in Sources */,
+				3B170292218E01A100E73526 /* StoresServices.swift in Sources */,
 				3B3EBC912176806B00E100C1 /* BaseCell.swift in Sources */,
 				3B3EBCA9217688A300E100C1 /* LoaderApp.swift in Sources */,
 				FAC39623218B378800E4D59E /* BaseController.swift in Sources */,

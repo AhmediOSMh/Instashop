@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ListAllStoreViewController: UIViewController ,UITableViewDataSource, UITableViewDelegate {
+class ListAllStoreViewController: BaseViewController ,UITableViewDataSource, UITableViewDelegate {
    
     
     @IBOutlet var tableview: UITableView!
     
-    var table_data = Array<TableData>()
-    
+    var table_data = [[String:Any]]()
+    var params: [String: Any] = [:]
     struct TableData
     {
         var section:String = ""
@@ -25,10 +25,18 @@ class ListAllStoreViewController: UIViewController ,UITableViewDataSource, UITab
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let userDefaults = Foundation.UserDefaults.standard
+        let mydict = userDefaults.object(forKey: "myDict") as! [String : Any]
+        self.params.updateValue("1" , forKey: "id_cat")
+        self.params.updateValue(mydict["longitude"] ?? "", forKey: "lon")
+        self.params.updateValue(mydict["latitude"] ?? "", forKey: "lat")
+      
+        getAllStore()
         tableview.dataSource = self
         tableview.delegate = self
-        self.tableview.register(UITableViewCell.self, forCellReuseIdentifier: "AllStoresCell")
-
+        self.tableview.register(AllStoresCell.self, forCellReuseIdentifier: "AllStoresCell")
         // Do any additional setup after loading the view.
     }
 
@@ -38,12 +46,17 @@ class ListAllStoreViewController: UIViewController ,UITableViewDataSource, UITab
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return table_data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AllStoresCell", for: indexPath) 
-        
+      
+        let cell:AllStoresCell = self.tableview.dequeueReusableCell(withIdentifier: "AllStoresCell") as! AllStoresCell
+      
+        if let Name = table_data[indexPath.row]["Name"]  {
+            cell.StoreName.text = Name as? String
+        }
+    
       
         return cell
     }
@@ -57,5 +70,20 @@ class ListAllStoreViewController: UIViewController ,UITableViewDataSource, UITab
         // Pass the selected object to the new view controller.
     }
     */
-
+    func  getAllStore() {
+        
+        AppDelegate.showLoader()
+        StoresServices().getAllStores(params: params) { (result) in
+            DispatchQueue.main.async {
+                AppDelegate.hideLoader()
+                if let result = result {
+                    self.table_data = result
+                    self.tableview.reloadData()
+                    self.alert(message: "Succes authentication")
+                } else {
+                    self.alert(message: "Fail Authentication")
+                }
+            }
+        }
+    }
 }

@@ -15,6 +15,8 @@ class AllStoresViewController: UIViewController {
     var pageMenuConfig : [CAPSPageMenuOption]!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //NotificationCenter.default.addObserver(self, selector: #selector(self.notificationReceived(_:)), name: .address, object: nil)
+        
         edgesForExtendedLayout = []
         pageMenuConfig = [
             .SelectionIndicatorHeight(0.0)
@@ -32,8 +34,8 @@ class AllStoresViewController: UIViewController {
             ,.HideTopMenuBar(false)
           
         ]
-        var controllerArray = [UIViewController]()
-        let controller1 : UIViewController = ListAllStoreViewController()
+        var controllerArray = [ListAllStoreViewController]()
+        let controller1 : ListAllStoreViewController = ListAllStoreViewController()
        // controller1.view.backgroundColor = UIColor.purple
         controller1.title = "PURPLE"
         controllerArray.append(controller1)
@@ -41,17 +43,17 @@ class AllStoresViewController: UIViewController {
         let controller2 : UIViewController = ListAllStoreViewController()
         //controller2.view.backgroundColor = UIColor.orange
         controller2.title = "ORANGE"
-        controllerArray.append(controller2)
+        controllerArray.append(controller2 as! ListAllStoreViewController)
         
-        let controller3 : UIViewController = UIViewController()
+        let controller3 : UIViewController = ListAllStoreViewController()
         controller3.view.backgroundColor = UIColor.gray
         controller3.title = "GRAY"
-        controllerArray.append(controller3)
+        controllerArray.append(controller3 as! ListAllStoreViewController)
         
         let controller4 : UIViewController = ListAllStoreViewController()
         //controller4.view.backgroundColor = UIColor.brown
         controller4.title = "BROWN"
-        controllerArray.append(controller4)
+        controllerArray.append(controller4 as! ListAllStoreViewController)
         
         pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height), pageMenuOptions: pageMenuConfig)
         
@@ -75,7 +77,10 @@ class AllStoresViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @objc func notificationReceived(_ notification: Notification) {
+        guard let longitude = notification.userInfo?["longitude"] as? Double else { return }
+        print ("longitude: \(longitude)")
+    }
 
     /*
     // MARK: - Navigation
